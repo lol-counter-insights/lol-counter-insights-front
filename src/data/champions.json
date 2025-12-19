@@ -1,6 +1,6 @@
 {
   "Aatrox": {
-    "nicknames": ["あーとろ", "アートロ", "剣魔"]
+    "nicknames": ["えーえー", "アートロ", "AA"]
   },
   "Ahri": {
     "nicknames": ["あーり", "アリ", "狐"]
@@ -42,19 +42,19 @@
     "nicknames": ["べるべす", "ベルヴェス"]
   },
   "Blitzcrank": {
-    "nicknames": ["ぶりっつ", "ブリッツ", "ロボ"]
+    "nicknames": ["ぶりっつ", "ブリッツ", "ロボ", "ハゲ", "禿"]
   },
   "Brand": {
-    "nicknames": ["ぶらんど", "ブランド"]
+    "nicknames": ["ぶらんど", "ブランド", "ハゲ", "禿"]
   },
   "Braum": {
-    "nicknames": ["ぶらうむ", "ブラウム"]
+    "nicknames": ["盾禿", "タテハゲ", "ハゲ", "禿"]
   },
   "Briar": {
     "nicknames": ["ぶらいあー", "ブライアー"]
   },
   "Caitlyn": {
-    "nicknames": ["けいと", "ケイト", "ケイトリン"]
+    "nicknames": ["けいさつ", "警察", "ぽりす"]
   },
   "Camille": {
     "nicknames": ["かみーる", "カミール"]
@@ -84,10 +84,10 @@
     "nicknames": ["えっこ", "エッコ", "エコー"]
   },
   "Elise": {
-    "nicknames": ["えりす", "エリス", "蜘蛛"]
+    "nicknames": ["えりす", "クモ", "蜘蛛"]
   },
   "Evelynn": {
-    "nicknames": ["いぶりん", "イブリン", "イブ"]
+    "nicknames": ["えゔぇりん", "えぶりん", "イブ"]
   },
   "Ezreal": {
     "nicknames": ["えずりある", "エズリアル", "エズ", "EZ"]
@@ -105,7 +105,7 @@
     "nicknames": ["がりお", "ガリオ"]
   },
   "Gangplank": {
-    "nicknames": ["じーぴー", "GP", "ガングプランク"]
+    "nicknames": ["じーぴー", "GP", "ガンプラ"]
   },
   "Garen": {
     "nicknames": ["がれん", "ガレン"]
@@ -114,7 +114,7 @@
     "nicknames": ["なー", "ナー"]
   },
   "Gragas": {
-    "nicknames": ["ぐらがす", "グラガス", "樽"]
+    "nicknames": ["サケカス", "ハゲ", "禿", "樽", "デブ", "酒"]
   },
   "Graves": {
     "nicknames": ["ぐれいぶす", "グレイブス"]
@@ -132,19 +132,19 @@
     "nicknames": ["ふえい", "フエイ"]
   },
   "Illaoi": {
-    "nicknames": ["いらおい", "イラオイ"]
+    "nicknames": ["いらおい", "イラオイ", "触手", "しょくしゅ"]
   },
   "Irelia": {
-    "nicknames": ["いれりあ", "イレリア"]
+    "nicknames": ["いれりあ", "イレリア", "ばばあ"]
   },
   "Ivern": {
-    "nicknames": ["あいばーん", "アイバーン", "木"]
+    "nicknames": ["あいばーん", "き", "木"]
   },
   "Janna": {
     "nicknames": ["じゃな", "ジャナ"]
   },
   "JarvanIV": {
-    "nicknames": ["じゃーばん", "ジャーヴァン", "J4"]
+    "nicknames": ["じぇーふぉー", "じぇいふぉー", "J4"]
   },
   "Jax": {
     "nicknames": ["じゃっくす", "ジャックス"]
@@ -159,7 +159,7 @@
     "nicknames": ["じんくす", "ジンクス"]
   },
   "Kaisa": {
-    "nicknames": ["かいさ", "カイサ", "カイ=サ"]
+    "nicknames": ["かいさ", "カイサ", "カイーサ"]
   },
   "Kalista": {
     "nicknames": ["かりすた", "カリスタ"]
@@ -168,25 +168,25 @@
     "nicknames": ["かるま", "カルマ"]
   },
   "Karthus": {
-    "nicknames": ["かーさす", "カーサス"]
+    "nicknames": ["かーさす", "カーサス", "ちんこんか"]
   },
   "Kassadin": {
     "nicknames": ["かさでぃん", "カサディン", "カサ"]
   },
   "Katarina": {
-    "nicknames": ["かたりな", "カタリナ"]
+    "nicknames": ["カタリナ", "きゃたりな", "けーえす", "けいえす", "キルスティール"]
   },
   "Kayle": {
-    "nicknames": ["けいる", "ケイル"]
+    "nicknames": ["けいる", "ケイル", "無敵", "むてき"]
   },
   "Kayn": {
     "nicknames": ["けいん", "ケイン"]
   },
   "Kennen": {
-    "nicknames": ["けねん", "ケネン"]
+    "nicknames": ["けねん", "雷", "かみなり", "でんき", "電気", "でんげき", "電撃", "ニンジャ", "にんじゃ"]
   },
   "Khazix": {
-    "nicknames": ["かじっくす", "カジックス", "カジ", "虫"]
+    "nicknames": ["かじっくす", "ばった", "カジ", "虫"]
   },
   "Kindred": {
     "nicknames": ["きんどれっど", "キンドレッド"]
@@ -198,22 +198,22 @@
     "nicknames": ["こぐまお", "コグマオ", "コグ"]
   },
   "KSante": {
-    "nicknames": ["くさんて", "クサンテ"]
+    "nicknames": ["かさんて", "クサンテ"]
   },
   "Leblanc": {
     "nicknames": ["るぶらん", "ルブラン", "LB"]
   },
   "LeeSin": {
-    "nicknames": ["りーしん", "リーシン", "リー"]
+    "nicknames": ["りーしん", "リーシン", "リー", "いく"]
   },
   "Leona": {
-    "nicknames": ["れおな", "レオナ"]
+    "nicknames": ["れおな", "レオナ", "たいよう", "太陽"]
   },
   "Lillia": {
-    "nicknames": ["りりあ", "リリア"]
+    "nicknames": ["りりあ", "リリア", "しか", "鹿"]
   },
   "Lissandra": {
-    "nicknames": ["りさんどら", "リサンドラ"]
+    "nicknames": ["りさんどら", "リサ"]
   },
   "Lucian": {
     "nicknames": ["るしあん", "ルシアン"]
@@ -231,10 +231,10 @@
     "nicknames": ["まるざはーる", "マルザハール", "マルザ"]
   },
   "Maokai": {
-    "nicknames": ["まおかい", "マオカイ"]
+    "nicknames": ["まおかい", "マオカイ", "き", "木"]
   },
   "MasterYi": {
-    "nicknames": ["ますたーいー", "マスターイー", "Yi"]
+    "nicknames": ["ますたーいー", "うーじゅー", "Yi"]
   },
   "Milio": {
     "nicknames": ["みりお", "ミリオ"]
@@ -249,19 +249,19 @@
     "nicknames": ["もるがな", "モルガナ"]
   },
   "Naafiri": {
-    "nicknames": ["なーふぃり", "ナーフィリ"]
+    "nicknames": ["いぬ", "犬"]
   },
   "Nami": {
     "nicknames": ["なみ", "ナミ"]
   },
   "Nasus": {
-    "nicknames": ["なさす", "ナサス", "犬"]
+    "nicknames": ["なさす", "のうか", "農家", "のうか", "犬", "いぬ"]
   },
   "Nautilus": {
     "nicknames": ["のーちらす", "ノーチラス"]
   },
   "Neeko": {
-    "nicknames": ["にーこ", "ニーコ"]
+    "nicknames": ["にーこ", "かめれおん"]
   },
   "Nidalee": {
     "nicknames": ["にだりー", "ニダリー"]
@@ -273,22 +273,22 @@
     "nicknames": ["のくたーん", "ノクターン"]
   },
   "Nunu": {
-    "nicknames": ["ぬぬ", "ヌヌ"]
+    "nicknames": ["ぬぬ", "うぃるんぷ"]
   },
   "Olaf": {
-    "nicknames": ["おらふ", "オラフ"]
+    "nicknames": ["おらふ", "オラフ", "sunori", "すのり"]
   },
   "Orianna": {
-    "nicknames": ["おりあな", "オリアナ"]
+    "nicknames": ["おりあな", "オリアンナ"]
   },
   "Ornn": {
     "nicknames": ["おーん", "オーン"]
   },
   "Pantheon": {
-    "nicknames": ["ぱんて", "パンテ", "パンテオン"]
+    "nicknames": ["ぱんつ", "パンテ", "パンテオン"]
   },
   "Poppy": {
-    "nicknames": ["ぽっぴー", "ポッピー"]
+    "nicknames": ["ぽっぴー", "ポッピー", "ぽぴー"]
   },
   "Pyke": {
     "nicknames": ["ぱいく", "パイク"]
@@ -297,13 +297,13 @@
     "nicknames": ["きやな", "キヤナ"]
   },
   "Quinn": {
-    "nicknames": ["くいん", "クイン"]
+    "nicknames": ["くいん", "クイン", "バロール"]
   },
   "Rakan": {
     "nicknames": ["らかん", "ラカン"]
   },
   "Rammus": {
-    "nicknames": ["らむす", "ラムス"]
+    "nicknames": ["らむす", "ラムス", "とげ", "かめ", "亀"]
   },
   "RekSai": {
     "nicknames": ["れくさい", "レクサイ"]
@@ -315,19 +315,19 @@
     "nicknames": ["れなーた", "レナータ"]
   },
   "Renekton": {
-    "nicknames": ["れねくとん", "レネクトン", "ワニ"]
+    "nicknames": ["れねくとん", "鰐", "ワニ"]
   },
   "Rengar": {
-    "nicknames": ["れんがー", "レンガー", "猫"]
+    "nicknames": ["れんにゃー", "レンガー", "猫"]
   },
   "Riven": {
-    "nicknames": ["りう゛ぇん", "リヴェン", "リベン"]
+    "nicknames": ["れいぶん", "リヴェン", "リベン"]
   },
   "Rumble": {
     "nicknames": ["らんぶる", "ランブル"]
   },
   "Ryze": {
-    "nicknames": ["らいず", "ライズ"]
+    "nicknames": ["らいず", "ライズ", "ハゲ", "禿", "青ハゲ", "あおはげ", "アオハゲ"]
   },
   "Samira": {
     "nicknames": ["さみら", "サミラ"]
@@ -339,52 +339,52 @@
     "nicknames": ["せな", "セナ"]
   },
   "Seraphine": {
-    "nicknames": ["せらふぃーん", "セラフィーン", "セラフィ"]
+    "nicknames": ["せらふぃーん", "セラフィーン", "セラフィ", "あいどる"]
   },
   "Sett": {
     "nicknames": ["せっと", "セト", "セット"]
   },
   "Shaco": {
-    "nicknames": ["しゃこ", "シャコ"]
+    "nicknames": ["しゃこ", "シャコ", "ぴえろ"]
   },
   "Shen": {
-    "nicknames": ["しぇん", "シェン"]
+    "nicknames": ["しえん", "シェン", "にんじゃ"]
   },
   "Shyvana": {
-    "nicknames": ["しゔぁな", "シヴァナ", "シヴァーナ"]
+    "nicknames": ["ドラゴン", "シヴァナ", "シバーナ", "竜", "龍"]
   },
   "Singed": {
-    "nicknames": ["しんじど", "シンジド"]
+    "nicknames": ["しんじど", "シンジド", "ハゲ", "禿", "毒禿", "どくはげ"]
   },
   "Sion": {
-    "nicknames": ["さいおん", "サイオン"]
+    "nicknames": ["さいおん", "サイオン", "ごりあっしぇ"]
   },
   "Sivir": {
-    "nicknames": ["しう゛ぃあ", "シヴィア"]
+    "nicknames": ["しびあ", "シヴィア"]
   },
   "Skarner": {
-    "nicknames": ["すかーなー", "スカーナー"]
+    "nicknames": ["すかーなー", "スカーナー", "サソリ", "蠍"]
   },
   "Smolder": {
-    "nicknames": ["すもるだー", "スモルダー"]
+    "nicknames": ["すもるだー", "スモルダー", "すもやん", "すーも"]
   },
   "Sona": {
-    "nicknames": ["そな", "ソナ"]
+    "nicknames": ["そな", "ソナ", "みく", "はつね", "初音ミク", "はつねみく"]
   },
   "Soraka": {
     "nicknames": ["そらか", "ソラカ"]
   },
   "Swain": {
-    "nicknames": ["すうぇいん", "スウェイン"]
+    "nicknames": ["すうぇいん", "スウェイン", "のくさす", "鳥"]
   },
   "Sylas": {
-    "nicknames": ["さいらす", "サイラス"]
+    "nicknames": ["さいらす", "サイラス", "くさり", "鎖"]
   },
   "Syndra": {
-    "nicknames": ["しんどら", "シンドラ"]
+    "nicknames": ["しんどら", "シンドラ", "たまなげ", "球投げ"]
   },
   "TahmKench": {
-    "nicknames": ["たむけんち", "タムケンチ", "ナマズ"]
+    "nicknames": ["たむけん", "タムケンチ", "ナマズ"]
   },
   "Taliyah": {
     "nicknames": ["たりやー", "タリヤ", "タリヤー"]
@@ -393,70 +393,70 @@
     "nicknames": ["たろん", "タロン"]
   },
   "Taric": {
-    "nicknames": ["たりっく", "タリック"]
+    "nicknames": ["たりっく", "タリック", "ほも", "宝石", "ほうせき"]
   },
   "Teemo": {
-    "nicknames": ["てぃーも", "ティーモ"]
+    "nicknames": ["てぃーも", "ティーモ", "害獣", "がいじゅう", "獣", "けもの", "きのこ", "毒きのこ", "どくきのこ"]
   },
   "Thresh": {
-    "nicknames": ["すれっしゅ", "スレッシュ"]
+    "nicknames": ["すれっしゅ", "スレッシュ", "魂", "たましい"]
   },
   "Tristana": {
     "nicknames": ["とりすたな", "トリスターナ", "トリス"]
   },
   "Trundle": {
-    "nicknames": ["とらんどる", "トランドル"]
+    "nicknames": ["とらんどる", "トランドル", "とろーる"]
   },
   "Tryndamere": {
     "nicknames": ["とりんだめあ", "トリンダメア", "トリン"]
   },
   "TwistedFate": {
-    "nicknames": ["TF", "ついすてっどふぇいと", "ツイステッドフェイト"]
+    "nicknames": ["TF", "てぃーえふ", "ツイステッドフェイト"]
   },
   "Twitch": {
-    "nicknames": ["とぅいっち", "トゥイッチ", "ネズミ"]
+    "nicknames": ["とぅいっち", "トゥイッチ", "ネズミ", "毒", "どく"]
   },
   "Udyr": {
     "nicknames": ["うでぃあ", "ウディア"]
   },
   "Urgot": {
-    "nicknames": ["あーごっと", "アーゴット"]
+    "nicknames": ["あーごっと", "アーゴット", "ハゲ", "禿"]
   },
   "Varus": {
-    "nicknames": ["う゛ぁるす", "ヴァルス"]
+    "nicknames": ["ばるす", "ヴァルス"]
   },
   "Vayne": {
-    "nicknames": ["う゛ぇいん", "ヴェイン"]
+    "nicknames": ["べいん", "ヴェイン"]
   },
   "Veigar": {
-    "nicknames": ["べいがー", "ベイガー"]
+    "nicknames": ["べいがー", "ゔぇいがー"]
   },
   "Velkoz": {
-    "nicknames": ["う゛ぇるこず", "ヴェルコズ"]
+    "nicknames": ["ゔぇるこず", "ベルコズ", "触手", "しょくしゅ", "IS", "あいず", "神", "かみ"]
   },
   "Vex": {
-    "nicknames": ["う゛ぇっくす", "ヴェックス"]
+    "nicknames": ["べっくす", "ヴェックス"]
   },
   "Vi": {
-    "nicknames": ["う゛ぁい", "ヴァイ"]
+    "nicknames": ["ばい", "ヴァイ", "V"]
   },
   "Viego": {
-    "nicknames": ["う゛ぃえご", "ヴィエゴ"]
+    "nicknames": ["びえご", "ヴィエゴ"]
   },
   "Viktor": {
-    "nicknames": ["う゛ぃくたー", "ヴィクター"]
+    "nicknames": ["びくたー", "ヴィクター", "べくたー"]
   },
   "Vladimir": {
-    "nicknames": ["ぶらでぃみあ", "ブラッドミア", "ブラッド"]
+    "nicknames": ["うらじみーる", "ブラッドミア", "ブラッド"]
   },
   "Volibear": {
-    "nicknames": ["う゛ぉりべあ", "ボリベア", "熊"]
+    "nicknames": ["ゔぉりべあ", "くま", "熊", "しろ", "白熊"]
   },
   "Warwick": {
-    "nicknames": ["わーうぃっく", "ワーウィック", "WW", "狼"]
+    "nicknames": ["わーうぃっく", "ワーウィック", "WW", "狼", "おおかみ"]
   },
   "Wukong": {
-    "nicknames": ["うーこん", "ウーコン", "猿"]
+    "nicknames": ["うーこん", "ウーコン", "猿", "さる", "悟空", "ごくう"]
   },
   "Xayah": {
     "nicknames": ["ざや", "ザヤ"]
@@ -468,22 +468,22 @@
     "nicknames": ["しんじゃお", "シンジャオ"]
   },
   "Yasuo": {
-    "nicknames": ["やすお", "ヤスオ"]
+    "nicknames": ["やすお", "ヤスオ", "はさき", "はせいおー", "もりあげ"]
   },
   "Yone": {
     "nicknames": ["よね", "ヨネ"]
   },
   "Yorick": {
-    "nicknames": ["よりっく", "ヨリック"]
+    "nicknames": ["よりっく", "ヨリック", "ぞんび", "よめ", "嫁"]
   },
   "Yuumi": {
-    "nicknames": ["ゆうみ", "ユウミ"]
+    "nicknames": ["クソ猫", "くそねこ", "猫", "ねこ"]
   },
   "Zac": {
-    "nicknames": ["ざっく", "ザック"]
+    "nicknames": ["すらいむ", "ザック"]
   },
   "Zed": {
-    "nicknames": ["ぜど", "ゼド"]
+    "nicknames": ["ぜど", "ゼド", "にんじゃ", "忍者"]
   },
   "Zeri": {
     "nicknames": ["ぜり", "ゼリ"]
@@ -492,12 +492,12 @@
     "nicknames": ["じぐす", "ジグス"]
   },
   "Zilean": {
-    "nicknames": ["じりあん", "ジリアン"]
+    "nicknames": ["じりあん", "ジリアン", "時計", "とけい", "じじい", "爺"]
   },
   "Zoe": {
-    "nicknames": ["ぞえ", "ゾーイ"]
+    "nicknames": ["ぞえ", "ゾーイ", "ガキ"]
   },
   "Zyra": {
-    "nicknames": ["ざいら", "ザイラ"]
+    "nicknames": ["ざいら", "ザイラ", "植物", "しょくぶつ"]
   }
 }

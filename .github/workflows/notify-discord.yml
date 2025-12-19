@@ -17,9 +17,19 @@ jobs:
           url="${{ github.event.head_commit.url }}"
           author="${{ github.event.pusher.name }}"
 
-          payload=$(jq -n \
-            --arg content 'サモナーがGitにコミットしました。\n\n湧いた場所：'"$repo"' ('"$branch"')\nサモナー名：'"$author"'\n一言：'"$msg"'\nURL：'"$url" \
-            '{content: $content}')
+          msg_content="サモナーがGitにコミットしました。
+                      湧いた場所：$repo ($branch) サモナー名：$author 一言：$msg URL：$url"
+
+          # 実際の改行を含めたメッセージを変数に格納
+          msg_content="サモナーがGitにコミットしました。
+
+          湧いた場所：$repo ($branch)
+          サモナー名：$author
+          一言：$msg
+          URL：$url"
+
+          # jq に渡す
+          payload=$(jq -n --arg content "$msg_content" '{content: $content}')
 
           curl -sS -X POST -H "Content-Type: application/json" \
             -d "$payload" \

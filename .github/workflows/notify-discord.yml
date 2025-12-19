@@ -18,8 +18,8 @@ jobs:
           author="${{ github.event.pusher.name }}"
 
           payload=$(jq -n \
-            --arg content "✅ push to **$repo** ($branch)\n**$author**: $msg\n<$url>" \
-            '{content: $content}')
+          --arg content "✅サモナーがGitにコミットしました。\n\n湧いた場所：$repo ($branch)\nサモナー名：$author\n一言：$msg\nURL：$url" \
+          '{content: $content}')
 
           curl -sS -X POST -H "Content-Type: application/json" \
             -d "$payload" \

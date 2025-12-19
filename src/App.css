@@ -1,0 +1,113 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #c89b3c;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #a09b8c;
+  font-size: 1rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #3c3c41;
+  border-radius: 8px;
+  background-color: #1e2328;
+  color: #f0e6d2;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #c89b3c;
+}
+
+.search-input::placeholder {
+  color: #5b5a56;
+}
+
+.champion-count {
+  text-align: center;
+  color: #a09b8c;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.champion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+  justify-items: center;
+}
+
+.champion-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #1e2328;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.champion-card:hover {
+  transform: scale(1.05);
+  background-color: #3c3c41;
+}
+
+.champion-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  border: 2px solid #3c3c41;
+}
+
+.champion-card:hover .champion-image {
+  border-color: #c89b3c;
+}
+
+.champion-name {
+  font-size: 0.75rem;
+  color: #f0e6d2;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70px;
+}
+
+.loading,
+.error,
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #a09b8c;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #e84057;
+}

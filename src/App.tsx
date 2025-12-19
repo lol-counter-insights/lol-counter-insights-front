@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import './App.css'
+import { normalizeForSearch } from './utils/kana'
+import customChampionData from './data/champions.json'
 
 interface Champion {
   id: string
@@ -13,9 +15,15 @@ interface ChampionData {
   data: Record<string, Champion>
 }
 
+interface CustomChampionData {
+  nicknames: string[]
+}
+
 const DDRAGON_VERSION = '14.23.1'
 const CHAMPION_JSON_URL = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}/data/ja_JP/champion.json`
 const CHAMPION_IMAGE_URL = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}/img/champion`
+
+const customData = customChampionData as Record<string, CustomChampionData>
 
 function App() {
   const [champions, setChampions] = useState<Champion[]>([])
@@ -43,10 +51,35 @@ function App() {
     fetchChampions()
   }, [])
 
-  const filteredChampions = champions.filter((champion) =>
-    champion.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    champion.id.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+  const filteredChampions = useMemo(() => {
+    if (!searchQuery) return champions
+
+    const normalizedQuery = normalizeForSearch(searchQuery)
+
+    return champions.filter((champion) => {
+      // チャンピオン名（日本語）で検索
+      if (normalizeForSearch(champion.name).includes(normalizedQuery)) {
+        return true
+      }
+
+      // チャンピオンID（英語）で検索
+      if (champion.id.toLowerCase().includes(normalizedQuery)) {
+        return true
+      }
+
+      // カスタムデータの愛称で検索
+      const custom = customData[champion.id]
+      if (custom?.nicknames) {
+        for (const nickname of custom.nicknames) {
+          if (normalizeForSearch(nickname).includes(normalizedQuery)) {
+            return true
+          }
+        }
+      }
+
+      return false
+    })
+  }, [champions, searchQuery])
 
   if (loading) {
     return <div className="loading">チャンピオンを読み込み中...</div>
@@ -67,7 +100,7 @@ function App() {
         <input
           type="text"
           className="search-input"
-          placeholder="チャンピオン名を入力..."
+          placeholder="チャンピオン名・愛称を入力..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           autoFocus

@@ -54,6 +54,27 @@
   font-size: 0.9rem;
 }
 
+.champion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.champion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row-separator {
+  color: #c89b3c;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #1e2328;
+  border-left: 3px solid #c89b3c;
+}
+
 .champion-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));

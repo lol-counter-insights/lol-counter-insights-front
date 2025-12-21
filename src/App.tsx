@@ -1,7 +1,9 @@
 import { useState, useEffect, useMemo } from 'react'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
-import { normalizeForSearch } from './utils/kana'
+import { normalizeForSearch, getKanaRow } from './utils/kana'
 import customChampionData from './data/champions.json'
+import { ChampionDetail } from './pages/ChampionDetail'
 
 interface Champion {
   id: string
@@ -19,44 +21,22 @@ interface CustomChampionData {
   nicknames: string[]
 }
 
-const DDRAGON_VERSION = '14.23.1'
-const CHAMPION_JSON_URL = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}/data/ja_JP/champion.json`
-const CHAMPION_IMAGE_URL = `https://ddragon.leagueoflegends.com/cdn/${DDRAGON_VERSION}/img/champion`
+const DDRAGON_VERSIONS_URL = 'https://ddragon.leagueoflegends.com/api/versions.json'
 
 const customData = customChampionData as Record<string, CustomChampionData>
 
-function App() {
-  const [champions, setChampions] = useState<Champion[]>([])
+function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], ddragonVersion: string | null }) {
+  const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    const fetchChampions = async () => {
-      try {
-        const response = await fetch(CHAMPION_JSON_URL)
-        if (!response.ok) {
-          throw new Error('Failed to fetch champions')
-        }
-        const data: ChampionData = await response.json()
-        const championList = Object.values(data.data)
-        setChampions(championList)
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Unknown error')
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchChampions()
-  }, [])
 
   const filteredChampions = useMemo(() => {
-    if (!searchQuery) return champions
+    const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+
+    if (!searchQuery) return sorted
 
     const normalizedQuery = normalizeForSearch(searchQuery)
 
-    return champions.filter((champion) => {
+    return sorted.filter((champion) => {
       // チャンピオン名（日本語）で検索
       if (normalizeForSearch(champion.name).includes(normalizedQuery)) {
         return true
@@ -81,12 +61,30 @@ function App() {
     })
   }, [champions, searchQuery])
 
-  if (loading) {
-    return <div className="loading">チャンピオンを読み込み中...</div>
+  // 50音行ごとにグループ化
+  const groupedChampions = useMemo(() => {
+    const groups: { row: string; champions: Champion[] }[] = []
+    let currentRow = ''
+
+    for (const champion of filteredChampions) {
+      const row = getKanaRow(champion.name[0])
+      if (row !== currentRow) {
+        currentRow = row
+        groups.push({ row, champions: [] })
+      }
+      groups[groups.length - 1].champions.push(champion)
+    }
+
+    return groups
+  }, [filteredChampions])
+
+  const getChampionImageUrl = (imageFull: string) => {
+    if (!ddragonVersion) return ''
+    return `https://ddragon.leagueoflegends.com/cdn/${ddragonVersion}/img/champion/${imageFull}`
   }
 
-  if (error) {
-    return <div className="error">エラー: {error}</div>
+  const handleChampionClick = (championId: string) => {
+    navigate(`/champion/${championId}`)
   }
 
   return (
@@ -111,15 +109,26 @@ function App() {
         {filteredChampions.length} / {champions.length} チャンピオン
       </div>
 
-      <div className="champion-grid">
-        {filteredChampions.map((champion) => (
-          <div key={champion.id} className="champion-card">
-            <img
-              src={`${CHAMPION_IMAGE_URL}/${champion.image.full}`}
-              alt={champion.name}
-              className="champion-image"
-            />
-            <span className="champion-name">{champion.name}</span>
+      <div className="champion-list">
+        {groupedChampions.map((group) => (
+          <div key={group.row} className="champion-group">
+            <div className="row-separator">{group.row}</div>
+            <div className="champion-grid">
+              {group.champions.map((champion) => (
+                <div
+                  key={champion.id}
+                  className="champion-card"
+                  onClick={() => handleChampionClick(champion.id)}
+                >
+                  <img
+                    src={getChampionImageUrl(champion.image.full)}
+                    alt={champion.name}
+                    className="champion-image"
+                  />
+                  <span className="champion-name">{champion.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
@@ -130,6 +139,67 @@ function App() {
         </div>
       )}
     </div>
+  )
+}
+
+function App() {
+  const [champions, setChampions] = useState<Champion[]>([])
+  const [ddragonVersion, setDdragonVersion] = useState<string | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // 最新バージョンを取得
+        const versionsResponse = await fetch(DDRAGON_VERSIONS_URL)
+        if (!versionsResponse.ok) {
+          throw new Error('Failed to fetch versions')
+        }
+        const versions: string[] = await versionsResponse.json()
+        const latestVersion = versions[0]
+        setDdragonVersion(latestVersion)
+
+        // チャンピオンデータを取得
+        const championUrl = `https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/ja_JP/champion.json`
+        const response = await fetch(championUrl)
+        if (!response.ok) {
+          throw new Error('Failed to fetch champions')
+        }
+        const data: ChampionData = await response.json()
+        const championList = Object.values(data.data)
+        setChampions(championList)
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Unknown error')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData()
+  }, [])
+
+  if (loading) {
+    return <div className="loading">チャンピオンを読み込み中...</div>
+  }
+
+  if (error) {
+    return <div className="error">エラー: {error}</div>
+  }
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<ChampionSearch champions={champions} ddragonVersion={ddragonVersion} />}
+        />
+        <Route
+          path="/champion/:championId"
+          element={<ChampionDetail champions={champions} ddragonVersion={ddragonVersion} />}
+        />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

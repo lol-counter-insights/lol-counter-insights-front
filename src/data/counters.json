@@ -1,0 +1,50 @@
+{
+  "Aatrox": {
+    "strongAgainst": [
+      { "championId": "Yasuo" },
+      { "championId": "Riven" },
+      { "championId": "Irelia" },
+      { "championId": "Camille" },
+      { "championId": "Fiora" }
+    ],
+    "weakAgainst": [
+      { "championId": "Vayne" },
+      { "championId": "Quinn" },
+      { "championId": "Kayle" },
+      { "championId": "Teemo" },
+      { "championId": "Malphite" }
+    ]
+  },
+  "Ahri": {
+    "strongAgainst": [
+      { "championId": "Veigar" },
+      { "championId": "Lux" },
+      { "championId": "Xerath" },
+      { "championId": "TwistedFate" },
+      { "championId": "Ziggs" }
+    ],
+    "weakAgainst": [
+      { "championId": "Kassadin" },
+      { "championId": "Fizz" },
+      { "championId": "Zed" },
+      { "championId": "Yasuo" },
+      { "championId": "Sylas" }
+    ]
+  },
+  "Urgot": {
+    "strongAgainst": [
+      { "championId": "Yasuo" },
+      { "championId": "Irelia" },
+      { "championId": "Riven" },
+      { "championId": "Camille" },
+      { "championId": "Aatrox" }
+    ],
+    "weakAgainst": [
+      { "championId": "Vayne" },
+      { "championId": "Teemo" },
+      { "championId": "Lillia" },
+      { "championId": "Cassiopeia" },
+      { "championId": "Quinn" }
+    ]
+  }
+}

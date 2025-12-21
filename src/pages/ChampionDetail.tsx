@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { counterDataSource } from '../services/counterDataSource'
 import type { ChampionCounterData, CounterMatchup } from '../types/counter'
+import customChampionData from '../data/champions.json'
 import './ChampionDetail.css'
 
 interface Champion {
@@ -11,6 +12,9 @@ interface Champion {
     full: string
   }
   tags?: string[]
+  stats?: {
+    attackrange: number
+  }
 }
 
 interface Props {
@@ -38,6 +42,22 @@ const tagToJapanese: Record<string, string> = {
   Marksman: 'マークスマン',
   Support: 'サポート',
 }
+
+const damageTypeToDisplay: Record<string, string> = {
+  ad: 'AD',
+  ap: 'AP',
+  hybrid: 'AD・AP',
+}
+
+// メレー/レンジ判定のしきい値
+const MELEE_RANGE_THRESHOLD = 300
+
+interface CustomChampionData {
+  nicknames: string[]
+  damageType?: 'ad' | 'ap' | 'hybrid'
+}
+
+const customData = customChampionData as Record<string, CustomChampionData>
 
 export function ChampionDetail({ champions, ddragonVersion }: Props) {
   const { championId } = useParams<{ championId: string }>()
@@ -106,6 +126,21 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
     ? tagToJapanese[champion.tags[0]] || champion.tags[0]
     : undefined
 
+  // attackrangeからメレー/レンジを判定
+  const championCustomData = customData[champion.id]
+  const attackRange = champion.stats?.attackrange
+  const japaneseRange = attackRange !== undefined
+    ? (attackRange < MELEE_RANGE_THRESHOLD ? 'メレー' : 'レンジ')
+    : undefined
+
+  // damageTypeを変換
+  const damageTypeDisplay = championCustomData?.damageType
+    ? damageTypeToDisplay[championCustomData.damageType]
+    : undefined
+
+  // タグ、range、damageTypeを組み合わせ
+  const tagDisplay = [japaneseTag, japaneseRange, damageTypeDisplay].filter(Boolean).join(' / ')
+
   return (
     <div className="champion-detail">
       {/* スプラッシュアート */}
@@ -121,7 +156,7 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
       {/* チャンピオン情報 */}
       <div className="champion-info">
         <h1 className="champion-title">{champion.name}</h1>
-        {japaneseTag && <p className="champion-tags">{japaneseTag}</p>}
+        {tagDisplay && <p className="champion-tags">{tagDisplay}</p>}
       </div>
 
       {/* カウンター情報 */}

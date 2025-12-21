@@ -12,6 +12,9 @@ interface Champion {
     full: string
   }
   tags?: string[]
+  stats?: {
+    attackrange: number
+  }
 }
 
 interface ChampionData {

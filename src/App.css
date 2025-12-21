@@ -162,7 +162,7 @@
   }
 }
 
-.is-searching .champion-image {
+.app.is-searching .champion-image {
   border-radius: 50%;
 }
 

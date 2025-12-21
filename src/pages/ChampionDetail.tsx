@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import { counterDataSource } from '../services/counterDataSource'
 import type { ChampionCounterData, CounterMatchup } from '../types/counter'
 import './ChampionDetail.css'
@@ -10,6 +10,7 @@ interface Champion {
   image: {
     full: string
   }
+  tags?: string[]
 }
 
 interface Props {
@@ -23,6 +24,20 @@ const getOpggUrl = (championId: string) =>
 
 const getUggUrl = (championId: string) =>
   `https://u.gg/lol/champions/${championId.toLowerCase()}/build`
+
+// スプラッシュアート画像URL
+const getSplashUrl = (championId: string) =>
+  `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`
+
+// タグの日本語変換
+const tagToJapanese: Record<string, string> = {
+  Fighter: 'ファイター',
+  Tank: 'タンク',
+  Mage: 'メイジ',
+  Assassin: 'アサシン',
+  Marksman: 'マークスマン',
+  Support: 'サポート',
+}
 
 export function ChampionDetail({ champions, ddragonVersion }: Props) {
   const { championId } = useParams<{ championId: string }>()
@@ -58,13 +73,18 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
     )
   }
 
+  const navigate = useNavigate()
+
   const renderMatchupList = (matchups: CounterMatchup[]) => (
     <div className="matchup-list">
-      {matchups.map((matchup, index) => {
+      {matchups.map((matchup) => {
         const matchupChampion = getChampionById(matchup.championId)
         return (
-          <div key={matchup.championId} className="matchup-item">
-            <span className="matchup-rank">{index + 1}</span>
+          <div
+            key={matchup.championId}
+            className="matchup-item"
+            onClick={() => navigate(`/champion/${matchup.championId}`)}
+          >
             {matchupChampion && (
               <img
                 src={getChampionImageUrl(matchupChampion.image.full)}
@@ -81,54 +101,41 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
     </div>
   )
 
+  // タグを日本語に変換（1つ目のみ）
+  const japaneseTag = champion.tags?.[0]
+    ? tagToJapanese[champion.tags[0]] || champion.tags[0]
+    : undefined
+
   return (
     <div className="champion-detail">
-      <Link to="/" className="back-link">← 検索に戻る</Link>
-
-      <div className="champion-header">
+      {/* スプラッシュアート */}
+      <div className="splash-container">
         <img
-          src={getChampionImageUrl(champion.image.full)}
+          src={getSplashUrl(champion.id)}
           alt={champion.name}
-          className="champion-detail-image"
+          className="splash-image"
         />
-        <div className="champion-header-info">
-          <h1>{champion.name}</h1>
-          <div className="external-links">
-            <a
-              href={getOpggUrl(champion.id)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="external-link opgg"
-            >
-              OP.GG
-            </a>
-            <a
-              href={getUggUrl(champion.id)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="external-link ugg"
-            >
-              U.GG
-            </a>
-          </div>
-        </div>
+        <div className="splash-overlay" />
       </div>
 
+      {/* チャンピオン情報 */}
+      <div className="champion-info">
+        <h1 className="champion-title">{champion.name}</h1>
+        {japaneseTag && <p className="champion-tags">{japaneseTag}</p>}
+      </div>
+
+      {/* カウンター情報 */}
       {loading ? (
         <div className="loading">カウンター情報を読み込み中...</div>
       ) : counterData ? (
         <div className="counter-sections">
           <section className="counter-section">
-            <h2 className="section-title strong">
-              有利なマッチアップ（TOP 5）
-            </h2>
+            <h2 className="section-title">有利チャンピオン</h2>
             {renderMatchupList(counterData.strongAgainst.slice(0, 5))}
           </section>
 
           <section className="counter-section">
-            <h2 className="section-title weak">
-              不利なマッチアップ（TOP 5）
-            </h2>
+            <h2 className="section-title">不利チャンピオン</h2>
             {renderMatchupList(counterData.weakAgainst.slice(0, 5))}
           </section>
         </div>
@@ -137,6 +144,29 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
           カウンター情報がまだ登録されていません
         </div>
       )}
+
+      {/* 外部リンク */}
+      <div className="external-links">
+        <a
+          href={getOpggUrl(champion.id)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="external-link opgg"
+        >
+          OP.GG ↗
+        </a>
+        <a
+          href={getUggUrl(champion.id)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="external-link ugg"
+        >
+          U.GG ↗
+        </a>
+      </div>
+
+      {/* 戻るリンク */}
+      <Link to="/" className="back-link">← 検索に戻る</Link>
     </div>
   )
 }

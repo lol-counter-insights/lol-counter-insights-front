@@ -11,6 +11,7 @@ interface Champion {
   image: {
     full: string
   }
+  tags?: string[]
 }
 
 interface ChampionData {

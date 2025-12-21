@@ -88,28 +88,28 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   }
 
   return (
-    <div className="app">
-      <header className="header">
-        <h1>LoL Counter Insights</h1>
-        <p className="subtitle">チャンピオンを検索</p>
+    <div className={`app ${searchQuery ? 'is-searching' : ''}`}>
+      <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
+        <h1 className="logo">
+          <img src="/logo.png" alt="League of Counter" className="logo-image" />
+        </h1>
       </header>
 
       <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="チャンピオン名・愛称を入力..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          autoFocus
-        />
+        <div className="search-wrapper">
+          <span className="search-icon">🔍</span>
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            autoFocus
+          />
+        </div>
       </div>
 
-      <div className="champion-count">
-        {filteredChampions.length} / {champions.length} チャンピオン
-      </div>
-
-      <div className="champion-list">
+      <div className={`champion-list ${searchQuery ? 'is-searching' : ''}`}>
         {groupedChampions.map((group) => (
           <div key={group.row} className="champion-group">
             <div className="row-separator">{group.row}</div>

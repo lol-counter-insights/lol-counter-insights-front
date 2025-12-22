@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, type MouseEvent } from 'react'
+import { useState, useEffect, useMemo, useCallback, type MouseEvent } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
 import searchIcon from './assets/icons/magnifying-glass.svg'
@@ -47,6 +47,7 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedLanes, setSelectedLanes] = useState<Lane[]>([])
+  const [backgroundChampion, setBackgroundChampion] = useState<Champion | null>(null)
 
   const filteredChampions = useMemo(() => {
     const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
@@ -87,6 +88,32 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
     })
   }, [champions, searchQuery, selectedLanes])
 
+  // 背景用に、現在のフィルター結果からランダムに1体選択
+  const pickRandomBackground = useCallback(
+    (prev: Champion | null) => {
+      if (filteredChampions.length === 0) return null
+      let next = filteredChampions[Math.floor(Math.random() * filteredChampions.length)]
+      if (prev && filteredChampions.length > 1) {
+        let tries = 0
+        while (next.id === prev.id && tries < 5) {
+          next = filteredChampions[Math.floor(Math.random() * filteredChampions.length)]
+          tries++
+        }
+      }
+      return next
+    },
+    [filteredChampions],
+  )
+
+  useEffect(() => {
+    // フィルター結果が変わったら即座に背景を選び直し
+    if (filteredChampions.length === 0) {
+      setBackgroundChampion(null)
+      return
+    }
+    setBackgroundChampion((prev) => pickRandomBackground(prev))
+  }, [filteredChampions, pickRandomBackground])
+
   // 行見出しなしの単一グループで表示
   const groupedChampions = useMemo(() => {
     return [{ row: '', champions: filteredChampions }]
@@ -121,6 +148,17 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
 
   return (
     <div className={`app ${searchQuery ? 'is-searching' : ''}`}>
+      {backgroundChampion && (
+        <div
+          key={backgroundChampion.id}
+          className="app-background"
+          style={{
+            backgroundImage: `url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${backgroundChampion.id}_0.jpg)`,
+          }}
+        />
+      )}
+      <div className="app-background-overlay" />
+      <div className="app-content">
       <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
         <h1 className="logo">
           <img src="/logo.png" alt="League of Counter" className="logo-image" />
@@ -205,6 +243,7 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
           該当するチャンピオンが見つかりません
         </div>
       )}
+      </div>
     </div>
   )
 }

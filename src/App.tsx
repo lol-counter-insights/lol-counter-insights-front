@@ -159,21 +159,21 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
       )}
       <div className="app-background-overlay" />
       <div className="app-content">
-      <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
-        <h1 className="logo">
-          <img src="/logo.png" alt="League of Counter" className="logo-image" />
-        </h1>
-      </header>
+        <div className="search-container">
+          <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
+            <h1 className="logo">
+              <img src="/logo.png" alt="League of Counter" className="logo-image" />
+            </h1>
+          </header>
 
-      <div className="search-container">
-        <div className="search-wrapper">
-          <span className="search-icon">
-            <img src={searchIcon} alt="" aria-hidden="true" />
-          </span>
-          <input
+          <div className="search-wrapper">
+            <span className="search-icon">
+              <img src={searchIcon} alt="" aria-hidden="true" />
+            </span>
+            <input
             type="text"
             className="search-input"
-            placeholder="Search"
+            placeholder="チャンピオン名を入力..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             autoFocus

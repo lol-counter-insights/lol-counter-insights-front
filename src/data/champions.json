@@ -19,6 +19,10 @@
     "nicknames": ["あり", "アリ", "牛"],
     "damageType": "ap"
   },
+  "Ambessa": {
+    "nicknames": ["あんべっさ", "アンベッサ"],
+    "damageType": "ad"
+  },
   "Amumu": {
     "nicknames": ["あむむ", "アムム", "ミイラ"],
     "damageType": "ap"
@@ -41,6 +45,10 @@
   },
   "AurelionSol": {
     "nicknames": ["あうれりおん", "ドラゴン", "ASol", "龍"],
+    "damageType": "ap"
+  },
+  "Aurora": {
+    "nicknames": ["おーろら", "オーロラ"],
     "damageType": "ap"
   },
   "Azir": {
@@ -315,12 +323,20 @@
     "nicknames": ["ますたーいー", "うーじゅー", "Yi"],
     "damageType": "ad"
   },
+  "Mel": {
+    "nicknames": ["める", "メル"],
+    "damageType": "ap"
+  },
   "Milio": {
     "nicknames": ["みりお", "ミリオ"],
     "damageType": "ap"
   },
   "MissFortune": {
     "nicknames": ["みすふぉーちゅん", "ミスフォーチュン", "MF"],
+    "damageType": "ad"
+  },
+  "MonkeyKing": {
+    "nicknames": ["うーこん", "ウーコン", "猿", "さる", "悟空", "ごくう"],
     "damageType": "ad"
   },
   "Mordekaiser": {
@@ -607,10 +623,6 @@
     "nicknames": ["わーうぃっく", "ワーウィック", "WW", "狼", "おおかみ"],
     "damageType": "hybrid"
   },
-  "Wukong": {
-    "nicknames": ["うーこん", "ウーコン", "猿", "さる", "悟空", "ごくう"],
-    "damageType": "ad"
-  },
   "Xayah": {
     "nicknames": ["ざや", "ザヤ"],
     "damageType": "ad"
@@ -635,9 +647,17 @@
     "nicknames": ["よりっく", "ヨリック", "ぞんび", "よめ", "嫁"],
     "damageType": "ad"
   },
+  "Yunara": {
+    "nicknames": ["ゆなら", "ユナラ"],
+    "damageType": "hybrid"
+  },
   "Yuumi": {
     "nicknames": ["クソ猫", "くそねこ", "猫", "ねこ"],
     "damageType": "ap"
+  },
+  "Zaahen": {
+    "nicknames": ["ざーへん", "ザーヘン"],
+    "damageType": "ad"
   },
   "Zac": {
     "nicknames": ["すらいむ", "ザック"],

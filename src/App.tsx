@@ -48,8 +48,6 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedLanes, setSelectedLanes] = useState<Lane[]>([])
 
-  const isFiltered = searchQuery !== '' || selectedLanes.length > 0
-
   const filteredChampions = useMemo(() => {
     const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
 

@@ -93,7 +93,7 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   }
 
   return (
-    <div className={`app ${isFocused || searchQuery ? 'is-searching' : ''}`}>
+    <div className={`app ${isFocused || searchQuery ? 'is-searching' : ''} ${searchQuery ? 'has-query' : ''}`}>
       <header className={`header ${isFocused || searchQuery ? 'header-hidden-mobile' : ''}`}>
         <h1 className="logo">
           <img src="/logo.png" alt="League of Counter" className="logo-image" />

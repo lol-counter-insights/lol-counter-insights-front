@@ -4,6 +4,7 @@ import './App.css'
 import searchIcon from './assets/icons/magnifying-glass.svg'
 import bookmarkIcon from './assets/icons/bookmark.svg'
 import bookmarkFilledIcon from './assets/icons/bookmark-filled.svg'
+import clearIcon from './assets/icons/x-mark.svg'
 import { normalizeForSearch } from './utils/kana'
 import customChampionData from './data/champions.json'
 import { ChampionDetail } from './pages/ChampionDetail'
@@ -196,6 +197,16 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
             onChange={(e) => setSearchQuery(e.target.value)}
             autoFocus
           />
+          {searchQuery && (
+            <button
+              type="button"
+              className="clear-button"
+              onClick={() => setSearchQuery('')}
+              aria-label="検索をクリア"
+            >
+              <img src={clearIcon} alt="" aria-hidden="true" />
+            </button>
+          )}
         </div>
         <div className="lane-filter">
           <button

@@ -114,27 +114,46 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
       </div>
 
       <div className={`champion-list ${searchQuery ? 'is-searching' : ''}`}>
-        {groupedChampions.map((group) => (
-          <div key={group.row} className="champion-group">
-            <div className="row-separator">{group.row}</div>
-            <div className="champion-grid">
-              {group.champions.map((champion) => (
-                <div
-                  key={champion.id}
-                  className="champion-card"
-                  onClick={() => handleChampionClick(champion.id)}
-                >
-                  <img
-                    src={getChampionImageUrl(champion.image.full)}
-                    alt={champion.name}
-                    className="champion-image"
-                  />
-                  <span className="champion-name">{champion.name}</span>
-                </div>
-              ))}
-            </div>
+        {searchQuery ? (
+          <div className="champion-grid">
+            {filteredChampions.map((champion) => (
+              <div
+                key={champion.id}
+                className="champion-card"
+                onClick={() => handleChampionClick(champion.id)}
+              >
+                <img
+                  src={getChampionImageUrl(champion.image.full)}
+                  alt={champion.name}
+                  className="champion-image"
+                />
+                <span className="champion-name">{champion.name}</span>
+              </div>
+            ))}
           </div>
-        ))}
+        ) : (
+          groupedChampions.map((group) => (
+            <div key={group.row} className="champion-group">
+              <div className="row-separator">{group.row}</div>
+              <div className="champion-grid">
+                {group.champions.map((champion) => (
+                  <div
+                    key={champion.id}
+                    className="champion-card"
+                    onClick={() => handleChampionClick(champion.id)}
+                  >
+                    <img
+                      src={getChampionImageUrl(champion.image.full)}
+                      alt={champion.name}
+                      className="champion-image"
+                    />
+                    <span className="champion-name">{champion.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))
+        )}
       </div>
 
       {filteredChampions.length === 0 && (

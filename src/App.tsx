@@ -32,6 +32,7 @@ const customData = customChampionData as Record<string, CustomChampionData>
 function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], ddragonVersion: string | null }) {
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
+  const [isFocused, setIsFocused] = useState(false)
 
   const filteredChampions = useMemo(() => {
     const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
@@ -92,8 +93,8 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   }
 
   return (
-    <div className={`app ${searchQuery ? 'is-searching' : ''}`}>
-      <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
+    <div className={`app ${isFocused || searchQuery ? 'is-searching' : ''}`}>
+      <header className={`header ${isFocused || searchQuery ? 'header-hidden-mobile' : ''}`}>
         <h1 className="logo">
           <img src="/logo.png" alt="League of Counter" className="logo-image" />
         </h1>
@@ -108,6 +109,8 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
             placeholder="Search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
             autoFocus
           />
           {searchQuery && (
@@ -122,7 +125,7 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
         </div>
       </div>
 
-      <div className={`champion-list ${searchQuery ? 'is-searching' : ''}`}>
+      <div className={`champion-list ${isFocused || searchQuery ? 'is-searching' : ''}`}>
         {searchQuery ? (
           <div className="champion-grid">
             {filteredChampions.map((champion) => (

@@ -132,7 +132,10 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
               <div
                 key={champion.id}
                 className="champion-card"
-                onClick={() => handleChampionClick(champion.id)}
+                onMouseDown={(e) => {
+                  e.preventDefault()
+                  handleChampionClick(champion.id)
+                }}
               >
                 <img
                   src={getChampionImageUrl(champion.image.full)}
@@ -152,7 +155,10 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
                   <div
                     key={champion.id}
                     className="champion-card"
-                    onClick={() => handleChampionClick(champion.id)}
+                    onMouseDown={(e) => {
+                      e.preventDefault()
+                      handleChampionClick(champion.id)
+                    }}
                   >
                     <img
                       src={getChampionImageUrl(champion.image.full)}

@@ -147,7 +147,7 @@
 }
 
 @media (max-width: 479px) {
-  .champion-list.is-searching .champion-grid {
+  .app.has-query .champion-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }

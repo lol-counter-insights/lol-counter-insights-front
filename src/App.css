@@ -193,7 +193,7 @@
   }
 }
 
-.app.is-searching .champion-image {
+.app.has-query .champion-image {
   border-radius: 50%;
 }
 

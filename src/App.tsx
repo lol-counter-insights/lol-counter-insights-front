@@ -101,7 +101,7 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
 
       <div className="search-container">
         <div className="search-wrapper">
-          <span className="search-icon">🔍</span>
+          <img src="/search.png" alt="検索" className="search-icon" />
           <input
             type="text"
             className="search-input"
@@ -110,6 +110,15 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
             onChange={(e) => setSearchQuery(e.target.value)}
             autoFocus
           />
+          {searchQuery && (
+            <button
+              className="search-cancel"
+              onClick={() => setSearchQuery('')}
+              type="button"
+            >
+              <img src="/cancel.png" alt="クリア" />
+            </button>
+          )}
         </div>
       </div>
 

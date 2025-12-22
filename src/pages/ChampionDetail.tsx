@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { counterDataSource } from '../services/counterDataSource'
 import type { ChampionCounterData, CounterMatchup } from '../types/counter'
+import { normalizeForSearch } from '../utils/kana'
 import customChampionData from '../data/champions.json'
 import './ChampionDetail.css'
 
@@ -61,10 +62,45 @@ const customData = customChampionData as Record<string, CustomChampionData>
 
 export function ChampionDetail({ champions, ddragonVersion }: Props) {
   const { championId } = useParams<{ championId: string }>()
+  const navigate = useNavigate()
   const [counterData, setCounterData] = useState<ChampionCounterData | null>(null)
   const [loading, setLoading] = useState(true)
+  const [isSearchFocused, setIsSearchFocused] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
 
   const champion = champions.find((c) => c.id === championId)
+
+  // 検索結果をフィルタリング
+  const filteredChampions = useMemo(() => {
+    if (!searchQuery) return []
+
+    const normalizedQuery = normalizeForSearch(searchQuery)
+    const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+
+    return sorted.filter((champ) => {
+      // チャンピオン名（日本語）で検索
+      if (normalizeForSearch(champ.name).includes(normalizedQuery)) {
+        return true
+      }
+
+      // チャンピオンID（英語）で検索
+      if (champ.id.toLowerCase().includes(normalizedQuery)) {
+        return true
+      }
+
+      // カスタムデータの愛称で検索
+      const custom = customData[champ.id]
+      if (custom?.nicknames) {
+        for (const nickname of custom.nicknames) {
+          if (normalizeForSearch(nickname).includes(normalizedQuery)) {
+            return true
+          }
+        }
+      }
+
+      return false
+    })
+  }, [champions, searchQuery])
 
   useEffect(() => {
     const fetchCounterData = async () => {
@@ -92,8 +128,6 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
       </div>
     )
   }
-
-  const navigate = useNavigate()
 
   const renderMatchupList = (matchups: CounterMatchup[]) => (
     <div className="matchup-list">
@@ -144,20 +178,54 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
   return (
     <div className="champion-detail">
       {/* ヘッダー */}
-      <header className="detail-header">
+      <header className={`detail-header ${isSearchFocused || searchQuery ? 'search-focused' : ''}`}>
         <h1 className="detail-logo">
           <Link to="/">
-            <img src="/logo.png" alt="League of Counter" className="detail-logo-image" />
+            <img src="/logo2.png" alt="League of Counter" className="detail-logo-image" />
           </Link>
         </h1>
-        <div className="detail-search-wrapper" onClick={() => navigate('/')}>
+        <div className="detail-search-wrapper">
           <img src="/search.png" alt="検索" className="detail-search-icon" />
           <input
             type="text"
             className="detail-search-input"
             placeholder="Search"
-            readOnly
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onFocus={() => setIsSearchFocused(true)}
+            onBlur={() => setIsSearchFocused(false)}
           />
+          {searchQuery && (
+            <button
+              className="detail-search-cancel"
+              onClick={() => setSearchQuery('')}
+              type="button"
+            >
+              <img src="/cancel.png" alt="クリア" />
+            </button>
+          )}
+          {/* 検索結果オーバーレイ */}
+          {searchQuery && filteredChampions.length > 0 && (
+            <div className="search-results-overlay">
+              {filteredChampions.map((champ) => (
+                <div
+                  key={champ.id}
+                  className="search-result-item"
+                  onMouseDown={() => {
+                    navigate(`/champion/${champ.id}`)
+                    setSearchQuery('')
+                  }}
+                >
+                  <img
+                    src={getChampionImageUrl(champ.image.full)}
+                    alt={champ.name}
+                    className="search-result-image"
+                  />
+                  <span className="search-result-name">{champ.name}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </header>
 

@@ -1,690 +1,1987 @@
 {
   "Aatrox": {
-    "nicknames": ["えーえー", "アートロ", "AA"],
-    "damageType": "ad"
+    "nicknames": [
+      "えーえー",
+      "アートロ",
+      "AA"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Ahri": {
-    "nicknames": ["あーり", "アリ", "狐"],
-    "damageType": "ap"
+    "nicknames": [
+      "あーり",
+      "アリ",
+      "狐"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Akali": {
-    "nicknames": ["あかり", "アカリ"],
-    "damageType": "ap"
+    "nicknames": [
+      "あかり",
+      "アカリ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Akshan": {
-    "nicknames": ["あくしゃん", "アクシャン"],
-    "damageType": "ad"
+    "nicknames": [
+      "あくしゃん",
+      "アクシャン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Alistar": {
-    "nicknames": ["あり", "アリ", "牛"],
-    "damageType": "ap"
+    "nicknames": [
+      "あり",
+      "アリ",
+      "牛"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Ambessa": {
-    "nicknames": ["あんべっさ", "アンベッサ"],
-    "damageType": "ad"
+    "nicknames": [
+      "あんべっさ",
+      "アンベッサ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Amumu": {
-    "nicknames": ["あむむ", "アムム", "ミイラ"],
-    "damageType": "ap"
+    "nicknames": [
+      "あむむ",
+      "アムム",
+      "ミイラ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "sup"
+    ]
   },
   "Anivia": {
-    "nicknames": ["あにびあ", "アニビア", "鳥"],
-    "damageType": "ap"
+    "nicknames": [
+      "あにびあ",
+      "アニビア",
+      "鳥"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Annie": {
-    "nicknames": ["あにー", "アニー"],
-    "damageType": "ap"
+    "nicknames": [
+      "あにー",
+      "アニー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "sup"
+    ]
   },
   "Aphelios": {
-    "nicknames": ["あふぇりおす", "アフェリオス", "アフェ"],
-    "damageType": "ad"
+    "nicknames": [
+      "あふぇりおす",
+      "アフェリオス",
+      "アフェ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Ashe": {
-    "nicknames": ["あっしゅ", "アッシュ"],
-    "damageType": "ad"
+    "nicknames": [
+      "あっしゅ",
+      "アッシュ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot",
+      "sup"
+    ]
   },
   "AurelionSol": {
-    "nicknames": ["あうれりおん", "ドラゴン", "ASol", "龍"],
-    "damageType": "ap"
+    "nicknames": [
+      "あうれりおん",
+      "ドラゴン",
+      "ASol",
+      "龍"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Aurora": {
-    "nicknames": ["おーろら", "オーロラ"],
-    "damageType": "ap"
+    "nicknames": [
+      "おーろら",
+      "オーロラ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Azir": {
-    "nicknames": ["あじーる", "アジル", "鶏"],
-    "damageType": "ap"
+    "nicknames": [
+      "あじーる",
+      "アジル",
+      "鶏"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Bard": {
-    "nicknames": ["ばーど", "バード"],
-    "damageType": "ap"
+    "nicknames": [
+      "ばーど",
+      "バード"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Belveth": {
-    "nicknames": ["べるべす", "ベルヴェス"],
-    "damageType": "ad"
+    "nicknames": [
+      "べるべす",
+      "ベルヴェス"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Blitzcrank": {
-    "nicknames": ["ぶりっつ", "ブリッツ", "ロボ", "ハゲ", "禿"],
-    "damageType": "ap"
+    "nicknames": [
+      "ぶりっつ",
+      "ブリッツ",
+      "ロボ",
+      "ハゲ",
+      "禿"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Brand": {
-    "nicknames": ["ぶらんど", "ブランド", "ハゲ", "禿"],
-    "damageType": "ap"
+    "nicknames": [
+      "ぶらんど",
+      "ブランド",
+      "ハゲ",
+      "禿"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Braum": {
-    "nicknames": ["盾禿", "タテハゲ", "ハゲ", "禿"],
-    "damageType": "ap"
+    "nicknames": [
+      "盾禿",
+      "タテハゲ",
+      "ハゲ",
+      "禿"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Briar": {
-    "nicknames": ["ぶらいあー", "ブライアー"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぶらいあー",
+      "ブライアー"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Caitlyn": {
-    "nicknames": ["けいさつ", "警察", "ぽりす"],
-    "damageType": "ad"
+    "nicknames": [
+      "けいさつ",
+      "警察",
+      "ぽりす"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Camille": {
-    "nicknames": ["かみーる", "カミール"],
-    "damageType": "ad"
+    "nicknames": [
+      "かみーる",
+      "カミール"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Cassiopeia": {
-    "nicknames": ["かしおぺあ", "カシオペア", "カシオ", "蛇"],
-    "damageType": "ap"
+    "nicknames": [
+      "かしおぺあ",
+      "カシオペア",
+      "カシオ",
+      "蛇"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Chogath": {
-    "nicknames": ["ちょがす", "チョガス"],
-    "damageType": "ap"
+    "nicknames": [
+      "ちょがす",
+      "チョガス"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Corki": {
-    "nicknames": ["こーき", "コーキ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "こーき",
+      "コーキ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "mid",
+      "bot"
+    ]
   },
   "Darius": {
-    "nicknames": ["だりうす", "ダリウス"],
-    "damageType": "ad"
+    "nicknames": [
+      "だりうす",
+      "ダリウス"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Diana": {
-    "nicknames": ["だいあな", "ダイアナ"],
-    "damageType": "ap"
+    "nicknames": [
+      "だいあな",
+      "ダイアナ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "mid"
+    ]
   },
   "DrMundo": {
-    "nicknames": ["むんど", "ムンド", "ドクターワールド"],
-    "damageType": "ap"
+    "nicknames": [
+      "むんど",
+      "ムンド",
+      "ドクターワールド"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Draven": {
-    "nicknames": ["どれいぶん", "ドレイブン", "ドレイヴン"],
-    "damageType": "ad"
+    "nicknames": [
+      "どれいぶん",
+      "ドレイブン",
+      "ドレイヴン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Ekko": {
-    "nicknames": ["えっこ", "エッコ", "エコー"],
-    "damageType": "ap"
+    "nicknames": [
+      "えっこ",
+      "エッコ",
+      "エコー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "mid"
+    ]
   },
   "Elise": {
-    "nicknames": ["えりす", "クモ", "蜘蛛"],
-    "damageType": "ap"
+    "nicknames": [
+      "えりす",
+      "クモ",
+      "蜘蛛"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg"
+    ]
   },
   "Evelynn": {
-    "nicknames": ["えゔぇりん", "えぶりん", "イブ"],
-    "damageType": "ap"
+    "nicknames": [
+      "えゔぇりん",
+      "えぶりん",
+      "イブ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg"
+    ]
   },
   "Ezreal": {
-    "nicknames": ["えずりある", "エズリアル", "エズ", "EZ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "えずりある",
+      "エズリアル",
+      "エズ",
+      "EZ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "bot"
+    ]
   },
   "Fiddlesticks": {
-    "nicknames": ["ふぃどる", "フィドル", "カカシ"],
-    "damageType": "ap"
+    "nicknames": [
+      "ふぃどる",
+      "フィドル",
+      "カカシ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "sup"
+    ]
   },
   "Fiora": {
-    "nicknames": ["ふぃおら", "フィオラ"],
-    "damageType": "ad"
+    "nicknames": [
+      "ふぃおら",
+      "フィオラ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Fizz": {
-    "nicknames": ["ふぃず", "フィズ", "魚"],
-    "damageType": "ap"
+    "nicknames": [
+      "ふぃず",
+      "フィズ",
+      "魚"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Galio": {
-    "nicknames": ["がりお", "ガリオ"],
-    "damageType": "ap"
+    "nicknames": [
+      "がりお",
+      "ガリオ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "sup"
+    ]
   },
   "Gangplank": {
-    "nicknames": ["じーぴー", "GP", "ガンプラ"],
-    "damageType": "ad"
+    "nicknames": [
+      "じーぴー",
+      "GP",
+      "ガンプラ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Garen": {
-    "nicknames": ["がれん", "ガレン"],
-    "damageType": "ad"
+    "nicknames": [
+      "がれん",
+      "ガレン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Gnar": {
-    "nicknames": ["なー", "ナー"],
-    "damageType": "ad"
+    "nicknames": [
+      "なー",
+      "ナー"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Gragas": {
-    "nicknames": ["サケカス", "ハゲ", "禿", "樽", "デブ", "酒"],
-    "damageType": "ap"
+    "nicknames": [
+      "サケカス",
+      "ハゲ",
+      "禿",
+      "樽",
+      "デブ",
+      "酒"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Graves": {
-    "nicknames": ["ぐれいぶす", "グレイブス"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぐれいぶす",
+      "グレイブス"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Gwen": {
-    "nicknames": ["ぐうぇん", "グウェン"],
-    "damageType": "ap"
+    "nicknames": [
+      "ぐうぇん",
+      "グウェン"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Hecarim": {
-    "nicknames": ["へかりむ", "ヘカリム", "馬"],
-    "damageType": "ad"
+    "nicknames": [
+      "へかりむ",
+      "ヘカリム",
+      "馬"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Heimerdinger": {
-    "nicknames": ["はいまー", "ハイマー", "ハイマーディンガー"],
-    "damageType": "ap"
+    "nicknames": [
+      "はいまー",
+      "ハイマー",
+      "ハイマーディンガー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "sup"
+    ]
   },
   "Hwei": {
-    "nicknames": ["ふえい", "フエイ"],
-    "damageType": "ap"
+    "nicknames": [
+      "ふえい",
+      "フエイ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "sup"
+    ]
   },
   "Illaoi": {
-    "nicknames": ["いらおい", "イラオイ", "触手", "しょくしゅ"],
-    "damageType": "ad"
+    "nicknames": [
+      "いらおい",
+      "イラオイ",
+      "触手",
+      "しょくしゅ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Irelia": {
-    "nicknames": ["いれりあ", "イレリア", "ばばあ"],
-    "damageType": "ad"
+    "nicknames": [
+      "いれりあ",
+      "イレリア",
+      "ばばあ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Ivern": {
-    "nicknames": ["あいばーん", "き", "木"],
-    "damageType": "ap"
+    "nicknames": [
+      "あいばーん",
+      "き",
+      "木"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg"
+    ]
   },
   "Janna": {
-    "nicknames": ["じゃな", "ジャナ"],
-    "damageType": "ap"
+    "nicknames": [
+      "じゃな",
+      "ジャナ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "JarvanIV": {
-    "nicknames": ["じぇーふぉー", "じぇいふぉー", "J4"],
-    "damageType": "ad"
+    "nicknames": [
+      "じぇーふぉー",
+      "じぇいふぉー",
+      "J4"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Jax": {
-    "nicknames": ["じゃっくす", "ジャックス"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "じゃっくす",
+      "ジャックス"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Jayce": {
-    "nicknames": ["じぇいす", "ジェイス"],
-    "damageType": "ad"
+    "nicknames": [
+      "じぇいす",
+      "ジェイス"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Jhin": {
-    "nicknames": ["じん", "ジン"],
-    "damageType": "ad"
+    "nicknames": [
+      "じん",
+      "ジン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Jinx": {
-    "nicknames": ["じんくす", "ジンクス"],
-    "damageType": "ad"
+    "nicknames": [
+      "じんくす",
+      "ジンクス"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Kaisa": {
-    "nicknames": ["かいさ", "カイサ", "カイーサ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "かいさ",
+      "カイサ",
+      "カイーサ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "bot",
+      "mid"
+    ]
   },
   "Kalista": {
-    "nicknames": ["かりすた", "カリスタ"],
-    "damageType": "ad"
+    "nicknames": [
+      "かりすた",
+      "カリスタ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot",
+      "sup"
+    ]
   },
   "Karma": {
-    "nicknames": ["かるま", "カルマ"],
-    "damageType": "ap"
+    "nicknames": [
+      "かるま",
+      "カルマ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Karthus": {
-    "nicknames": ["かーさす", "カーサス", "ちんこんか"],
-    "damageType": "ap"
+    "nicknames": [
+      "かーさす",
+      "カーサス",
+      "ちんこんか"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "mid"
+    ]
   },
   "Kassadin": {
-    "nicknames": ["かさでぃん", "カサディン", "カサ"],
-    "damageType": "ap"
+    "nicknames": [
+      "かさでぃん",
+      "カサディン",
+      "カサ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Katarina": {
-    "nicknames": ["カタリナ", "きゃたりな", "けーえす", "けいえす", "キルスティール"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "カタリナ",
+      "きゃたりな",
+      "けーえす",
+      "けいえす",
+      "キルスティール"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "mid"
+    ]
   },
   "Kayle": {
-    "nicknames": ["けいる", "ケイル", "無敵", "むてき"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "けいる",
+      "ケイル",
+      "無敵",
+      "むてき"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Kayn": {
-    "nicknames": ["けいん", "ケイン"],
-    "damageType": "ad"
+    "nicknames": [
+      "けいん",
+      "ケイン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Kennen": {
-    "nicknames": ["けねん", "雷", "かみなり", "でんき", "電気", "でんげき", "電撃", "ニンジャ", "にんじゃ"],
-    "damageType": "ap"
+    "nicknames": [
+      "けねん",
+      "雷",
+      "かみなり",
+      "でんき",
+      "電気",
+      "でんげき",
+      "電撃",
+      "ニンジャ",
+      "にんじゃ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Khazix": {
-    "nicknames": ["かじっくす", "ばった", "カジ", "虫"],
-    "damageType": "ad"
+    "nicknames": [
+      "かじっくす",
+      "ばった",
+      "カジ",
+      "虫"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Kindred": {
-    "nicknames": ["きんどれっど", "キンドレッド"],
-    "damageType": "ad"
+    "nicknames": [
+      "きんどれっど",
+      "キンドレッド"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Kled": {
-    "nicknames": ["くれっど", "クレッド"],
-    "damageType": "ad"
+    "nicknames": [
+      "くれっど",
+      "クレッド"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "KogMaw": {
-    "nicknames": ["こぐまお", "コグマオ", "コグ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "こぐまお",
+      "コグマオ",
+      "コグ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "bot"
+    ]
   },
   "KSante": {
-    "nicknames": ["かさんて", "クサンテ"],
-    "damageType": "ad"
+    "nicknames": [
+      "かさんて",
+      "クサンテ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Leblanc": {
-    "nicknames": ["るぶらん", "ルブラン", "LB"],
-    "damageType": "ap"
+    "nicknames": [
+      "るぶらん",
+      "ルブラン",
+      "LB"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "LeeSin": {
-    "nicknames": ["りーしん", "リーシン", "リー", "いく"],
-    "damageType": "ad"
+    "nicknames": [
+      "りーしん",
+      "リーシン",
+      "リー",
+      "いく"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Leona": {
-    "nicknames": ["れおな", "レオナ", "たいよう", "太陽"],
-    "damageType": "ap"
+    "nicknames": [
+      "れおな",
+      "レオナ",
+      "たいよう",
+      "太陽"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Lillia": {
-    "nicknames": ["りりあ", "リリア", "しか", "鹿"],
-    "damageType": "ap"
+    "nicknames": [
+      "りりあ",
+      "リリア",
+      "しか",
+      "鹿"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Lissandra": {
-    "nicknames": ["りさんどら", "リサ"],
-    "damageType": "ap"
+    "nicknames": [
+      "りさんどら",
+      "リサ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Lucian": {
-    "nicknames": ["るしあん", "ルシアン"],
-    "damageType": "ad"
+    "nicknames": [
+      "るしあん",
+      "ルシアン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot",
+      "mid"
+    ]
   },
   "Lulu": {
-    "nicknames": ["るる", "ルル"],
-    "damageType": "ap"
+    "nicknames": [
+      "るる",
+      "ルル"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Lux": {
-    "nicknames": ["らっくす", "ラックス"],
-    "damageType": "ap"
+    "nicknames": [
+      "らっくす",
+      "ラックス"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Malphite": {
-    "nicknames": ["まるふぁいと", "マルファイト", "岩"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "まるふぁいと",
+      "マルファイト",
+      "岩"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Malzahar": {
-    "nicknames": ["まるざはーる", "マルザハール", "マルザ"],
-    "damageType": "ap"
+    "nicknames": [
+      "まるざはーる",
+      "マルザハール",
+      "マルザ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Maokai": {
-    "nicknames": ["まおかい", "マオカイ", "き", "木"],
-    "damageType": "ap"
+    "nicknames": [
+      "まおかい",
+      "マオカイ",
+      "き",
+      "木"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "sup"
+    ]
   },
   "MasterYi": {
-    "nicknames": ["ますたーいー", "うーじゅー", "Yi"],
-    "damageType": "ad"
+    "nicknames": [
+      "ますたーいー",
+      "うーじゅー",
+      "Yi"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Mel": {
-    "nicknames": ["める", "メル"],
-    "damageType": "ap"
+    "nicknames": [
+      "める",
+      "メル"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Milio": {
-    "nicknames": ["みりお", "ミリオ"],
-    "damageType": "ap"
+    "nicknames": [
+      "みりお",
+      "ミリオ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "MissFortune": {
-    "nicknames": ["みすふぉーちゅん", "ミスフォーチュン", "MF"],
-    "damageType": "ad"
+    "nicknames": [
+      "みすふぉーちゅん",
+      "ミスフォーチュン",
+      "MF"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "MonkeyKing": {
-    "nicknames": ["うーこん", "ウーコン", "猿", "さる", "悟空", "ごくう"],
-    "damageType": "ad"
+    "nicknames": [
+      "うーこん",
+      "ウーコン",
+      "猿",
+      "さる",
+      "悟空",
+      "ごくう"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Mordekaiser": {
-    "nicknames": ["もるでかいざー", "モルデカイザー", "モルデ"],
-    "damageType": "ap"
+    "nicknames": [
+      "もるでかいざー",
+      "モルデカイザー",
+      "モルデ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Morgana": {
-    "nicknames": ["もるがな", "モルガナ"],
-    "damageType": "ap"
+    "nicknames": [
+      "もるがな",
+      "モルガナ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "jg"
+    ]
   },
   "Naafiri": {
-    "nicknames": ["いぬ", "犬"],
-    "damageType": "ad"
+    "nicknames": [
+      "いぬ",
+      "犬"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "mid",
+      "jg"
+    ]
   },
   "Nami": {
-    "nicknames": ["なみ", "ナミ"],
-    "damageType": "ap"
+    "nicknames": [
+      "なみ",
+      "ナミ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Nasus": {
-    "nicknames": ["なさす", "のうか", "農家", "のうか", "犬", "いぬ"],
-    "damageType": "ad"
+    "nicknames": [
+      "なさす",
+      "のうか",
+      "農家",
+      "のうか",
+      "犬",
+      "いぬ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Nautilus": {
-    "nicknames": ["のーちらす", "ノーチラス"],
-    "damageType": "ap"
+    "nicknames": [
+      "のーちらす",
+      "ノーチラス"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Neeko": {
-    "nicknames": ["にーこ", "かめれおん"],
-    "damageType": "ap"
+    "nicknames": [
+      "にーこ",
+      "かめれおん"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "sup"
+    ]
   },
   "Nidalee": {
-    "nicknames": ["にだりー", "ニダリー"],
-    "damageType": "ap"
+    "nicknames": [
+      "にだりー",
+      "ニダリー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg"
+    ]
   },
   "Nilah": {
-    "nicknames": ["にーら", "ニーラ"],
-    "damageType": "ad"
+    "nicknames": [
+      "にーら",
+      "ニーラ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Nocturne": {
-    "nicknames": ["のくたーん", "ノクターン"],
-    "damageType": "ad"
+    "nicknames": [
+      "のくたーん",
+      "ノクターン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Nunu": {
-    "nicknames": ["ぬぬ", "うぃるんぷ"],
-    "damageType": "ap"
+    "nicknames": [
+      "ぬぬ",
+      "うぃるんぷ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg"
+    ]
   },
   "Olaf": {
-    "nicknames": ["おらふ", "オラフ", "sunori", "すのり"],
-    "damageType": "ad"
+    "nicknames": [
+      "おらふ",
+      "オラフ",
+      "sunori",
+      "すのり"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Orianna": {
-    "nicknames": ["おりあな", "オリアンナ"],
-    "damageType": "ap"
+    "nicknames": [
+      "おりあな",
+      "オリアンナ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Ornn": {
-    "nicknames": ["おーん", "オーン"],
-    "damageType": "ap"
+    "nicknames": [
+      "おーん",
+      "オーン"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top"
+    ]
   },
   "Pantheon": {
-    "nicknames": ["ぱんつ", "パンテ", "パンテオン"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぱんつ",
+      "パンテ",
+      "パンテオン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "sup",
+      "top"
+    ]
   },
   "Poppy": {
-    "nicknames": ["ぽっぴー", "ポッピー", "ぽぴー"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぽっぴー",
+      "ポッピー",
+      "ぽぴー"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Pyke": {
-    "nicknames": ["ぱいく", "パイク"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぱいく",
+      "パイク"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Qiyana": {
-    "nicknames": ["きやな", "キヤナ"],
-    "damageType": "ad"
+    "nicknames": [
+      "きやな",
+      "キヤナ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "mid",
+      "jg"
+    ]
   },
   "Quinn": {
-    "nicknames": ["くいん", "クイン", "バロール"],
-    "damageType": "ad"
+    "nicknames": [
+      "くいん",
+      "クイン",
+      "バロール"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Rakan": {
-    "nicknames": ["らかん", "ラカン"],
-    "damageType": "ap"
+    "nicknames": [
+      "らかん",
+      "ラカン"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Rammus": {
-    "nicknames": ["らむす", "ラムス", "とげ", "かめ", "亀"],
-    "damageType": "ap"
+    "nicknames": [
+      "らむす",
+      "ラムス",
+      "とげ",
+      "かめ",
+      "亀"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg"
+    ]
   },
   "RekSai": {
-    "nicknames": ["れくさい", "レクサイ"],
-    "damageType": "ad"
+    "nicknames": [
+      "れくさい",
+      "レクサイ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Rell": {
-    "nicknames": ["れる", "レル"],
-    "damageType": "ap"
+    "nicknames": [
+      "れる",
+      "レル"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "jg"
+    ]
   },
   "Renata": {
-    "nicknames": ["れなーた", "レナータ"],
-    "damageType": "ap"
+    "nicknames": [
+      "れなーた",
+      "レナータ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Renekton": {
-    "nicknames": ["れねくとん", "鰐", "ワニ"],
-    "damageType": "ad"
+    "nicknames": [
+      "れねくとん",
+      "鰐",
+      "ワニ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Rengar": {
-    "nicknames": ["れんにゃー", "レンガー", "猫"],
-    "damageType": "ad"
+    "nicknames": [
+      "れんにゃー",
+      "レンガー",
+      "猫"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Riven": {
-    "nicknames": ["れいぶん", "リヴェン", "リベン"],
-    "damageType": "ad"
+    "nicknames": [
+      "れいぶん",
+      "リヴェン",
+      "リベン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "Rumble": {
-    "nicknames": ["らんぶる", "ランブル"],
-    "damageType": "ap"
+    "nicknames": [
+      "らんぶる",
+      "ランブル"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Ryze": {
-    "nicknames": ["らいず", "ライズ", "ハゲ", "禿", "青ハゲ", "あおはげ", "アオハゲ"],
-    "damageType": "ap"
+    "nicknames": [
+      "らいず",
+      "ライズ",
+      "ハゲ",
+      "禿",
+      "青ハゲ",
+      "あおはげ",
+      "アオハゲ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Samira": {
-    "nicknames": ["さみら", "サミラ"],
-    "damageType": "ad"
+    "nicknames": [
+      "さみら",
+      "サミラ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Sejuani": {
-    "nicknames": ["せじゅあに", "セジュアニ"],
-    "damageType": "ap"
+    "nicknames": [
+      "せじゅあに",
+      "セジュアニ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Senna": {
-    "nicknames": ["せな", "セナ"],
-    "damageType": "ad"
+    "nicknames": [
+      "せな",
+      "セナ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "sup",
+      "bot"
+    ]
   },
   "Seraphine": {
-    "nicknames": ["せらふぃーん", "セラフィーン", "セラフィ", "あいどる"],
-    "damageType": "ap"
+    "nicknames": [
+      "せらふぃーん",
+      "セラフィーン",
+      "セラフィ",
+      "あいどる"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "bot"
+    ]
   },
   "Sett": {
-    "nicknames": ["せっと", "セト", "セット"],
-    "damageType": "ad"
+    "nicknames": [
+      "せっと",
+      "セト",
+      "セット"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "sup"
+    ]
   },
   "Shaco": {
-    "nicknames": ["しゃこ", "シャコ", "ぴえろ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "しゃこ",
+      "シャコ",
+      "ぴえろ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "jg",
+      "sup"
+    ]
   },
   "Shen": {
-    "nicknames": ["しえん", "シェン", "にんじゃ"],
-    "damageType": "ap"
+    "nicknames": [
+      "しえん",
+      "シェン",
+      "にんじゃ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top",
+      "sup"
+    ]
   },
   "Shyvana": {
-    "nicknames": ["ドラゴン", "シヴァナ", "シバーナ", "竜", "龍"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "ドラゴン",
+      "シヴァナ",
+      "シバーナ",
+      "竜",
+      "龍"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "jg"
+    ]
   },
   "Singed": {
-    "nicknames": ["しんじど", "シンジド", "ハゲ", "禿", "毒禿", "どくはげ"],
-    "damageType": "ap"
+    "nicknames": [
+      "しんじど",
+      "シンジド",
+      "ハゲ",
+      "禿",
+      "毒禿",
+      "どくはげ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top"
+    ]
   },
   "Sion": {
-    "nicknames": ["さいおん", "サイオン", "ごりあっしぇ"],
-    "damageType": "ad"
+    "nicknames": [
+      "さいおん",
+      "サイオン",
+      "ごりあっしぇ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Sivir": {
-    "nicknames": ["しびあ", "シヴィア"],
-    "damageType": "ad"
+    "nicknames": [
+      "しびあ",
+      "シヴィア"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Skarner": {
-    "nicknames": ["すかーなー", "スカーナー", "サソリ", "蠍"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "すかーなー",
+      "スカーナー",
+      "サソリ",
+      "蠍"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Smolder": {
-    "nicknames": ["すもるだー", "スモルダー", "すもやん", "すーも"],
-    "damageType": "ad"
+    "nicknames": [
+      "すもるだー",
+      "スモルダー",
+      "すもやん",
+      "すーも"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Sona": {
-    "nicknames": ["そな", "ソナ", "みく", "はつね", "初音ミク", "はつねみく"],
-    "damageType": "ap"
+    "nicknames": [
+      "そな",
+      "ソナ",
+      "みく",
+      "はつね",
+      "初音ミク",
+      "はつねみく"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Soraka": {
-    "nicknames": ["そらか", "ソラカ"],
-    "damageType": "ap"
+    "nicknames": [
+      "そらか",
+      "ソラカ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Swain": {
-    "nicknames": ["すうぇいん", "スウェイン", "のくさす", "鳥"],
-    "damageType": "ap"
+    "nicknames": [
+      "すうぇいん",
+      "スウェイン",
+      "のくさす",
+      "鳥"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Sylas": {
-    "nicknames": ["さいらす", "サイラス", "くさり", "鎖"],
-    "damageType": "ap"
+    "nicknames": [
+      "さいらす",
+      "サイラス",
+      "くさり",
+      "鎖"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Syndra": {
-    "nicknames": ["しんどら", "シンドラ", "たまなげ", "球投げ"],
-    "damageType": "ap"
+    "nicknames": [
+      "しんどら",
+      "シンドラ",
+      "たまなげ",
+      "球投げ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "TahmKench": {
-    "nicknames": ["たむけん", "タムケンチ", "ナマズ"],
-    "damageType": "ap"
+    "nicknames": [
+      "たむけん",
+      "タムケンチ",
+      "ナマズ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "top"
+    ]
   },
   "Taliyah": {
-    "nicknames": ["たりやー", "タリヤ", "タリヤー"],
-    "damageType": "ap"
+    "nicknames": [
+      "たりやー",
+      "タリヤ",
+      "タリヤー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "jg"
+    ]
   },
   "Talon": {
-    "nicknames": ["たろん", "タロン"],
-    "damageType": "ad"
+    "nicknames": [
+      "たろん",
+      "タロン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "mid",
+      "jg"
+    ]
   },
   "Taric": {
-    "nicknames": ["たりっく", "タリック", "ほも", "宝石", "ほうせき"],
-    "damageType": "ap"
+    "nicknames": [
+      "たりっく",
+      "タリック",
+      "ほも",
+      "宝石",
+      "ほうせき"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Teemo": {
-    "nicknames": ["てぃーも", "ティーモ", "害獣", "がいじゅう", "獣", "けもの", "きのこ", "毒きのこ", "どくきのこ"],
-    "damageType": "ap"
+    "nicknames": [
+      "てぃーも",
+      "ティーモ",
+      "害獣",
+      "がいじゅう",
+      "獣",
+      "けもの",
+      "きのこ",
+      "毒きのこ",
+      "どくきのこ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "top"
+    ]
   },
   "Thresh": {
-    "nicknames": ["すれっしゅ", "スレッシュ", "魂", "たましい"],
-    "damageType": "ap"
+    "nicknames": [
+      "すれっしゅ",
+      "スレッシュ",
+      "魂",
+      "たましい"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Tristana": {
-    "nicknames": ["とりすたな", "トリスターナ", "トリス"],
-    "damageType": "ad"
+    "nicknames": [
+      "とりすたな",
+      "トリスターナ",
+      "トリス"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot",
+      "mid"
+    ]
   },
   "Trundle": {
-    "nicknames": ["とらんどる", "トランドル", "とろーる"],
-    "damageType": "ad"
+    "nicknames": [
+      "とらんどる",
+      "トランドル",
+      "とろーる"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Tryndamere": {
-    "nicknames": ["とりんだめあ", "トリンダメア", "トリン"],
-    "damageType": "ad"
+    "nicknames": [
+      "とりんだめあ",
+      "トリンダメア",
+      "トリン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "mid"
+    ]
   },
   "TwistedFate": {
-    "nicknames": ["TF", "てぃーえふ", "ツイステッドフェイト"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "TF",
+      "てぃーえふ",
+      "ツイステッドフェイト"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Twitch": {
-    "nicknames": ["とぅいっち", "トゥイッチ", "ネズミ", "毒", "どく"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "とぅいっち",
+      "トゥイッチ",
+      "ネズミ",
+      "毒",
+      "どく"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "bot",
+      "jg"
+    ]
   },
   "Udyr": {
-    "nicknames": ["うでぃあ", "ウディア"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "うでぃあ",
+      "ウディア"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Urgot": {
-    "nicknames": ["あーごっと", "アーゴット", "ハゲ", "禿"],
-    "damageType": "ad"
+    "nicknames": [
+      "あーごっと",
+      "アーゴット",
+      "ハゲ",
+      "禿"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Varus": {
-    "nicknames": ["ばるす", "ヴァルス"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "ばるす",
+      "ヴァルス"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "bot"
+    ]
   },
   "Vayne": {
-    "nicknames": ["べいん", "ヴェイン"],
-    "damageType": "ad"
+    "nicknames": [
+      "べいん",
+      "ヴェイン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot",
+      "top"
+    ]
   },
   "Veigar": {
-    "nicknames": ["べいがー", "ゔぇいがー"],
-    "damageType": "ap"
+    "nicknames": [
+      "べいがー",
+      "ゔぇいがー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "sup"
+    ]
   },
   "Velkoz": {
-    "nicknames": ["ゔぇるこず", "ベルコズ", "触手", "しょくしゅ", "IS", "あいず", "神", "かみ"],
-    "damageType": "ap"
+    "nicknames": [
+      "ゔぇるこず",
+      "ベルコズ",
+      "触手",
+      "しょくしゅ",
+      "IS",
+      "あいず",
+      "神",
+      "かみ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Vex": {
-    "nicknames": ["べっくす", "ヴェックス"],
-    "damageType": "ap"
+    "nicknames": [
+      "べっくす",
+      "ヴェックス"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Vi": {
-    "nicknames": ["ばい", "ヴァイ", "V"],
-    "damageType": "ad"
+    "nicknames": [
+      "ばい",
+      "ヴァイ",
+      "V"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Viego": {
-    "nicknames": ["びえご", "ヴィエゴ"],
-    "damageType": "ad"
+    "nicknames": [
+      "びえご",
+      "ヴィエゴ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Viktor": {
-    "nicknames": ["びくたー", "ヴィクター", "べくたー"],
-    "damageType": "ap"
+    "nicknames": [
+      "びくたー",
+      "ヴィクター",
+      "べくたー"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Vladimir": {
-    "nicknames": ["うらじみーる", "ブラッドミア", "ブラッド"],
-    "damageType": "ap"
+    "nicknames": [
+      "うらじみーる",
+      "ブラッドミア",
+      "ブラッド"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Volibear": {
-    "nicknames": ["ゔぉりべあ", "くま", "熊", "しろ", "白熊"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "ゔぉりべあ",
+      "くま",
+      "熊",
+      "しろ",
+      "白熊"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Warwick": {
-    "nicknames": ["わーうぃっく", "ワーウィック", "WW", "狼", "おおかみ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "わーうぃっく",
+      "ワーウィック",
+      "WW",
+      "狼",
+      "おおかみ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Xayah": {
-    "nicknames": ["ざや", "ザヤ"],
-    "damageType": "ad"
+    "nicknames": [
+      "ざや",
+      "ザヤ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Xerath": {
-    "nicknames": ["ぜらす", "ゼラス"],
-    "damageType": "ap"
+    "nicknames": [
+      "ぜらす",
+      "ゼラス"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid",
+      "sup"
+    ]
   },
   "XinZhao": {
-    "nicknames": ["しんじゃお", "シンジャオ"],
-    "damageType": "ad"
+    "nicknames": [
+      "しんじゃお",
+      "シンジャオ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "jg"
+    ]
   },
   "Yasuo": {
-    "nicknames": ["やすお", "ヤスオ", "はさき", "はせいおー", "もりあげ"],
-    "damageType": "ad"
+    "nicknames": [
+      "やすお",
+      "ヤスオ",
+      "はさき",
+      "はせいおー",
+      "もりあげ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Yone": {
-    "nicknames": ["よね", "ヨネ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "よね",
+      "ヨネ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "mid",
+      "top"
+    ]
   },
   "Yorick": {
-    "nicknames": ["よりっく", "ヨリック", "ぞんび", "よめ", "嫁"],
-    "damageType": "ad"
+    "nicknames": [
+      "よりっく",
+      "ヨリック",
+      "ぞんび",
+      "よめ",
+      "嫁"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top"
+    ]
   },
   "Yunara": {
-    "nicknames": ["ゆなら", "ユナラ"],
-    "damageType": "hybrid"
+    "nicknames": [
+      "ゆなら",
+      "ユナラ"
+    ],
+    "damageType": "hybrid",
+    "lanes": [
+      "bot"
+    ]
   },
   "Yuumi": {
-    "nicknames": ["クソ猫", "くそねこ", "猫", "ねこ"],
-    "damageType": "ap"
+    "nicknames": [
+      "クソ猫",
+      "くそねこ",
+      "猫",
+      "ねこ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   },
   "Zaahen": {
-    "nicknames": ["ざーへん", "ザーヘン"],
-    "damageType": "ad"
+    "nicknames": [
+      "ざーへん",
+      "ザーヘン"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "top",
+      "jg"
+    ]
   },
   "Zac": {
-    "nicknames": ["すらいむ", "ザック"],
-    "damageType": "ap"
+    "nicknames": [
+      "すらいむ",
+      "ザック"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "jg",
+      "top"
+    ]
   },
   "Zed": {
-    "nicknames": ["ぜど", "ゼド", "にんじゃ", "忍者"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぜど",
+      "ゼド",
+      "にんじゃ",
+      "忍者"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "mid",
+      "jg"
+    ]
   },
   "Zeri": {
-    "nicknames": ["ぜり", "ゼリ"],
-    "damageType": "ad"
+    "nicknames": [
+      "ぜり",
+      "ゼリ"
+    ],
+    "damageType": "ad",
+    "lanes": [
+      "bot"
+    ]
   },
   "Ziggs": {
-    "nicknames": ["じぐす", "ジグス"],
-    "damageType": "ap"
+    "nicknames": [
+      "じぐす",
+      "ジグス"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "bot",
+      "mid"
+    ]
   },
   "Zilean": {
-    "nicknames": ["じりあん", "ジリアン", "時計", "とけい", "じじい", "爺"],
-    "damageType": "ap"
+    "nicknames": [
+      "じりあん",
+      "ジリアン",
+      "時計",
+      "とけい",
+      "じじい",
+      "爺"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup",
+      "mid"
+    ]
   },
   "Zoe": {
-    "nicknames": ["ぞえ", "ゾーイ", "ガキ"],
-    "damageType": "ap"
+    "nicknames": [
+      "ぞえ",
+      "ゾーイ",
+      "ガキ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "mid"
+    ]
   },
   "Zyra": {
-    "nicknames": ["ざいら", "ザイラ", "植物", "しょくぶつ"],
-    "damageType": "ap"
+    "nicknames": [
+      "ざいら",
+      "ザイラ",
+      "植物",
+      "しょくぶつ"
+    ],
+    "damageType": "ap",
+    "lanes": [
+      "sup"
+    ]
   }
 }

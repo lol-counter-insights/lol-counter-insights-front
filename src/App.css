@@ -22,8 +22,54 @@
 
 .search-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 80px;
+  gap: 8px;
+}
+
+.lane-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  width: 100%;
+  max-width: 640px;
+  justify-content: center;
+}
+
+.lane-chip {
+  background: rgba(240, 230, 210, 0.12);
+  color: #f0e6d2;
+  border: 1px solid rgba(240, 230, 210, 0.2);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.lane-chip-label {
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.lane-chip:hover {
+  border-color: rgba(240, 230, 210, 0.35);
+  transform: translateY(-1px);
+}
+
+.lane-chip.is-active {
+  background: rgba(240, 230, 210, 0.12);
+  color: #f0e6d2;
+  border-color: #4aa8ff;
+  box-shadow: 0 0 0 2px rgba(74, 168, 255, 0.35);
+  border-radius: 8px;
 }
 
 @media (max-width: 479px) {
@@ -57,16 +103,21 @@
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  color: #666;
-  font-size: 1.1rem;
   pointer-events: none;
+}
+
+.search-icon img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  opacity: 0.7;
 }
 
 .search-input {
   width: 100%;
   padding: 12px 20px 12px 38px;
   font-size: 1.1rem;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 8px;
   background-color: #ffffff;
   color: #333;
@@ -75,7 +126,8 @@
 }
 
 .search-input:focus {
-  box-shadow: 0 0 0 3px rgba(200, 170, 110, 0.3);
+  border-color: #4aa8ff;
+  box-shadow: 0 0 0 2px rgba(74, 168, 255, 0.35);
 }
 
 .search-input::placeholder {
@@ -163,7 +215,9 @@
 }
 
 .app.is-searching .champion-image {
+  /* 絞り込み時にアイコンを丸くする処理を停止
   border-radius: 50%;
+  */
 }
 
 .champion-name {
@@ -175,6 +229,26 @@
   text-overflow: ellipsis;
   max-width: 80px;
   margin-top: -1px;
+}
+
+.champion-lanes {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.champion-lane-chip {
+  background: rgba(240, 230, 210, 0.12);
+  color: #f0e6d2;
+  border: 1px solid rgba(240, 230, 210, 0.25);
+  border-radius: 999px;
+  padding: 2px 6px;
+  font-size: 0.6rem;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .loading,

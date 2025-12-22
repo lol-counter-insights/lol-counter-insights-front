@@ -8,6 +8,7 @@ import './ChampionDetail.css'
 interface Champion {
   id: string
   name: string
+  title?: string
   image: {
     full: string
   }
@@ -55,9 +56,18 @@ const MELEE_RANGE_THRESHOLD = 300
 interface CustomChampionData {
   nicknames: string[]
   damageType?: 'ad' | 'ap' | 'hybrid'
+  lanes?: ('top' | 'jg' | 'mid' | 'bot' | 'sup')[]
 }
 
 const customData = customChampionData as Record<string, CustomChampionData>
+
+const laneLabel: Record<NonNullable<CustomChampionData['lanes']>[number], string> = {
+  top: 'TOP',
+  jg: 'JG',
+  mid: 'MID',
+  bot: 'BOT',
+  sup: 'SUP',
+}
 
 export function ChampionDetail({ champions, ddragonVersion }: Props) {
   const { championId } = useParams<{ championId: string }>()
@@ -88,7 +98,7 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
     return (
       <div className="champion-detail">
         <div className="error">チャンピオンが見つかりません</div>
-        <Link to="/" className="back-link">← 検索に戻る</Link>
+        <Link to="/" className="back-link">検索に戻る</Link>
       </div>
     )
   }
@@ -139,24 +149,40 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
     : undefined
 
   // タグ、range、damageTypeを組み合わせ
-  const tagDisplay = [japaneseTag, japaneseRange, damageTypeDisplay].filter(Boolean).join(' / ')
+  const infoChips = [japaneseTag, japaneseRange, damageTypeDisplay].filter(
+    (value): value is string => Boolean(value),
+  )
+
+  const laneChips = (championCustomData?.lanes ?? []).map((lane) => ({
+    key: lane,
+    label: laneLabel[lane] || lane,
+  }))
+
+  const splashUrl = getSplashUrl(champion.id)
 
   return (
-    <div className="champion-detail">
-      {/* スプラッシュアート */}
-      <div className="splash-container">
-        <img
-          src={getSplashUrl(champion.id)}
-          alt={champion.name}
-          className="splash-image"
-        />
-        <div className="splash-overlay" />
-      </div>
+    <div className="champion-detail" style={{ backgroundImage: `url(${splashUrl})` }}>
+      <div className="background-overlay" />
+      <div className="detail-content">
 
       {/* チャンピオン情報 */}
       <div className="champion-info">
+        {champion.title && <p className="champion-subtitle">{champion.title}</p>}
         <h1 className="champion-title">{champion.name}</h1>
-        {tagDisplay && <p className="champion-tags">{tagDisplay}</p>}
+        {(laneChips.length > 0 || infoChips.length > 0) && (
+          <div className="champion-chips">
+            {laneChips.map((lane) => (
+              <span key={lane.key} className="champion-chip is-lane">
+                {lane.label}
+              </span>
+            ))}
+            {infoChips.map((chip) => (
+              <span key={chip} className="champion-chip">
+                {chip}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* カウンター情報 */}
@@ -188,7 +214,7 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
           rel="noopener noreferrer"
           className="external-link opgg"
         >
-          OP.GG ↗
+          OP.GG
         </a>
         <a
           href={getUggUrl(champion.id)}
@@ -196,12 +222,13 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
           rel="noopener noreferrer"
           className="external-link ugg"
         >
-          U.GG ↗
+          U.GG
         </a>
       </div>
 
       {/* 戻るリンク */}
-      <Link to="/" className="back-link">← 検索に戻る</Link>
+      <Link to="/" className="back-link">検索に戻る</Link>
+      </div>
     </div>
   )
 }

@@ -1,13 +1,15 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, type MouseEvent } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
-import { normalizeForSearch, getKanaRow } from './utils/kana'
+import searchIcon from './assets/icons/magnifying-glass.svg'
+import { normalizeForSearch } from './utils/kana'
 import customChampionData from './data/champions.json'
 import { ChampionDetail } from './pages/ChampionDetail'
 
 interface Champion {
   id: string
   name: string
+  title?: string
   image: {
     full: string
   }
@@ -23,24 +25,46 @@ interface ChampionData {
 
 interface CustomChampionData {
   nicknames: string[]
+  damageType?: 'ad' | 'ap' | 'hybrid'
+  lanes?: ('top' | 'jg' | 'mid' | 'bot' | 'sup')[]
 }
 
 const DDRAGON_VERSIONS_URL = 'https://ddragon.leagueoflegends.com/api/versions.json'
 
 const customData = customChampionData as Record<string, CustomChampionData>
 
+type Lane = 'top' | 'jg' | 'mid' | 'bot' | 'sup'
+
+const laneOptions: { key: Lane; label: string }[] = [
+  { key: 'top', label: 'TOP' },
+  { key: 'jg', label: 'JG' },
+  { key: 'mid', label: 'MID' },
+  { key: 'bot', label: 'BOT' },
+  { key: 'sup', label: 'SUP' },
+]
+
 function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], ddragonVersion: string | null }) {
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
+  const [selectedLanes, setSelectedLanes] = useState<Lane[]>([])
+
+  const isFiltered = searchQuery !== '' || selectedLanes.length > 0
 
   const filteredChampions = useMemo(() => {
     const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
 
-    if (!searchQuery) return sorted
+    if (!searchQuery && selectedLanes.length === 0) return sorted
 
     const normalizedQuery = normalizeForSearch(searchQuery)
 
     return sorted.filter((champion) => {
+      // レーンフィルター（指定があれば、いずれかのレーンに一致するものだけ残す）
+      if (selectedLanes.length > 0) {
+        const lanes = customData[champion.id]?.lanes ?? []
+        const isMatchLane = lanes.some((lane) => selectedLanes.includes(lane))
+        if (!isMatchLane) return false
+      }
+
       // チャンピオン名（日本語）で検索
       if (normalizeForSearch(champion.name).includes(normalizedQuery)) {
         return true
@@ -63,23 +87,11 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
 
       return false
     })
-  }, [champions, searchQuery])
+  }, [champions, searchQuery, selectedLanes])
 
-  // 50音行ごとにグループ化
+  // 行見出しなしの単一グループで表示
   const groupedChampions = useMemo(() => {
-    const groups: { row: string; champions: Champion[] }[] = []
-    let currentRow = ''
-
-    for (const champion of filteredChampions) {
-      const row = getKanaRow(champion.name[0])
-      if (row !== currentRow) {
-        currentRow = row
-        groups.push({ row, champions: [] })
-      }
-      groups[groups.length - 1].champions.push(champion)
-    }
-
-    return groups
+    return [{ row: '', champions: filteredChampions }]
   }, [filteredChampions])
 
   const getChampionImageUrl = (imageFull: string) => {
@@ -91,6 +103,24 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
     navigate(`/champion/${championId}`)
   }
 
+  const handleLaneClick = (lane: Lane, event: MouseEvent<HTMLButtonElement>) => {
+    const allowMulti = event.ctrlKey || event.metaKey || event.shiftKey
+
+    setSelectedLanes((prev) => {
+      if (allowMulti) {
+        return prev.includes(lane) ? prev.filter((l) => l !== lane) : [...prev, lane]
+      }
+
+      // 単独選択。すでにそのレーンのみ選択中ならクリア（全て状態に戻す）
+      if (prev.length === 1 && prev[0] === lane) {
+        return []
+      }
+      return [lane]
+    })
+  }
+
+  const clearLanes = () => setSelectedLanes([])
+
   return (
     <div className={`app ${searchQuery ? 'is-searching' : ''}`}>
       <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
@@ -101,7 +131,9 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
 
       <div className="search-container">
         <div className="search-wrapper">
-          <span className="search-icon">🔍</span>
+          <span className="search-icon">
+            <img src={searchIcon} alt="" aria-hidden="true" />
+          </span>
           <input
             type="text"
             className="search-input"
@@ -111,30 +143,63 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
             autoFocus
           />
         </div>
+        <div className="lane-filter">
+          <button
+            className={`lane-chip ${selectedLanes.length === 0 ? 'is-active' : ''}`}
+            onClick={clearLanes}
+            type="button"
+            aria-label="ALL"
+          >
+            <span className="lane-chip-label">ALL</span>
+          </button>
+          {laneOptions.map((lane) => (
+            <button
+              key={lane.key}
+              className={`lane-chip ${selectedLanes.includes(lane.key) ? 'is-active' : ''}`}
+              onClick={(event) => handleLaneClick(lane.key, event)}
+              type="button"
+              aria-label={lane.label}
+            >
+              <span className="lane-chip-label">{lane.label}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className={`champion-list ${searchQuery ? 'is-searching' : ''}`}>
         {groupedChampions.map((group) => (
           <div key={group.row} className="champion-group">
-            <div className="row-separator">{group.row}</div>
+            {group.row && <div className="row-separator">{group.row}</div>}
             <div className="champion-grid">
               {group.champions.map((champion) => (
-                <div
-                  key={champion.id}
-                  className="champion-card"
-                  onClick={() => handleChampionClick(champion.id)}
-                >
+            <div
+              key={champion.id}
+              className="champion-card"
+              onClick={() => handleChampionClick(champion.id)}
+            >
                   <img
                     src={getChampionImageUrl(champion.image.full)}
-                    alt={champion.name}
-                    className="champion-image"
-                  />
-                  <span className="champion-name">{champion.name}</span>
+                alt={champion.name}
+                className="champion-image"
+              />
+              <span className="champion-name">{champion.name}</span>
+              {customData[champion.id]?.lanes && (
+                <div className="champion-lanes">
+                  {customData[champion.id].lanes!.map((lane) => {
+                    const label = laneOptions.find((opt) => opt.key === lane)?.label ?? lane
+                    return (
+                      <span key={lane} className="champion-lane-chip">
+                        {label}
+                      </span>
+                    )
+                  })}
                 </div>
-              ))}
+              )}
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+    ))}
       </div>
 
       {filteredChampions.length === 0 && (

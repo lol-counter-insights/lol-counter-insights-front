@@ -39,8 +39,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "mid",
-      "top"
+      "mid"
     ]
   },
   "Alistar": {
@@ -72,8 +71,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "jg",
-      "sup"
+      "jg"
     ]
   },
   "Anivia": {
@@ -94,8 +92,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "mid",
-      "sup"
+      "mid"
     ]
   },
   "Aphelios": {
@@ -116,8 +113,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "bot",
-      "sup"
+      "bot"
     ]
   },
   "AurelionSol": {
@@ -195,8 +191,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "sup",
-      "mid"
+      "sup"
     ]
   },
   "Braum": {
@@ -239,8 +234,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "top",
-      "jg"
+      "top"
     ]
   },
   "Cassiopeia": {
@@ -398,8 +392,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "mid",
-      "top"
+      "mid"
     ]
   },
   "Galio": {
@@ -421,8 +414,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "top",
-      "mid"
+      "top"
     ]
   },
   "Garen": {
@@ -467,8 +459,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Gwen": {
@@ -502,6 +493,7 @@
     "damageType": "ap",
     "lanes": [
       "top",
+      "mid",
       "sup"
     ]
   },
@@ -512,8 +504,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "mid",
-      "sup"
+      "mid"
     ]
   },
   "Illaoi": {
@@ -569,8 +560,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Jax": {
@@ -623,8 +613,7 @@
     ],
     "damageType": "hybrid",
     "lanes": [
-      "bot",
-      "mid"
+      "bot"
     ]
   },
   "Kalista": {
@@ -634,8 +623,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "bot",
-      "sup"
+      "bot"
     ]
   },
   "Karma": {
@@ -645,8 +633,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "sup",
-      "mid"
+      "sup"
     ]
   },
   "Karthus": {
@@ -657,8 +644,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "jg",
-      "mid"
+      "jg"
     ]
   },
   "Kassadin": {
@@ -694,8 +680,7 @@
     ],
     "damageType": "hybrid",
     "lanes": [
-      "top",
-      "mid"
+      "top"
     ]
   },
   "Kayn": {
@@ -722,8 +707,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "top",
-      "mid"
+      "top"
     ]
   },
   "Khazix": {
@@ -799,8 +783,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Leona": {
@@ -824,8 +807,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Lissandra": {
@@ -845,8 +827,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "bot",
-      "mid"
+      "bot"
     ]
   },
   "Lulu": {
@@ -866,8 +847,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "sup",
-      "mid"
+      "sup"
     ]
   },
   "Malphite": {
@@ -924,8 +904,8 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "sup",
-      "mid"
+      "mid",
+      "sup"
     ]
   },
   "Milio": {
@@ -960,8 +940,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Mordekaiser": {
@@ -1070,8 +1049,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Nunu": {
@@ -1148,8 +1126,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "sup",
-      "mid"
+      "sup"
     ]
   },
   "Qiyana": {
@@ -1214,8 +1191,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "sup",
-      "jg"
+      "sup"
     ]
   },
   "Renata": {
@@ -1247,8 +1223,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Riven": {
@@ -1259,8 +1234,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "top",
-      "mid"
+      "top"
     ]
   },
   "Rumble": {
@@ -1343,8 +1317,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "top",
-      "sup"
+      "top"
     ]
   },
   "Shaco": {
@@ -1428,8 +1401,7 @@
     ],
     "damageType": "hybrid",
     "lanes": [
-      "jg",
-      "top"
+      "jg"
     ]
   },
   "Smolder": {
@@ -1491,7 +1463,7 @@
     "damageType": "ap",
     "lanes": [
       "mid",
-      "top"
+      "jg"
     ]
   },
   "Syndra": {
@@ -1591,8 +1563,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "bot",
-      "mid"
+      "bot"
     ]
   },
   "Trundle": {
@@ -1615,8 +1586,7 @@
     ],
     "damageType": "ad",
     "lanes": [
-      "top",
-      "mid"
+      "top"
     ]
   },
   "TwistedFate": {
@@ -1627,8 +1597,7 @@
     ],
     "damageType": "hybrid",
     "lanes": [
-      "mid",
-      "top"
+      "mid"
     ]
   },
   "Twitch": {
@@ -1641,8 +1610,7 @@
     ],
     "damageType": "hybrid",
     "lanes": [
-      "bot",
-      "jg"
+      "bot"
     ]
   },
   "Udyr": {
@@ -1816,8 +1784,8 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "mid",
-      "sup"
+      "sup",
+      "mid"
     ]
   },
   "XinZhao": {
@@ -1957,8 +1925,7 @@
     ],
     "damageType": "ap",
     "lanes": [
-      "sup",
-      "mid"
+      "sup"
     ]
   },
   "Zoe": {

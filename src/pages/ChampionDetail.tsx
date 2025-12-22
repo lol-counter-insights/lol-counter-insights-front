@@ -143,6 +143,24 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
 
   return (
     <div className="champion-detail">
+      {/* ヘッダー */}
+      <header className="detail-header">
+        <h1 className="detail-logo">
+          <Link to="/">
+            <img src="/logo.png" alt="League of Counter" className="detail-logo-image" />
+          </Link>
+        </h1>
+        <div className="detail-search-wrapper" onClick={() => navigate('/')}>
+          <img src="/search.png" alt="検索" className="detail-search-icon" />
+          <input
+            type="text"
+            className="detail-search-input"
+            placeholder="Search"
+            readOnly
+          />
+        </div>
+      </header>
+
       {/* スプラッシュアート */}
       <div className="splash-container">
         <img
@@ -199,9 +217,6 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
           U.GG ↗
         </a>
       </div>
-
-      {/* 戻るリンク */}
-      <Link to="/" className="back-link">← 検索に戻る</Link>
     </div>
   )
 }

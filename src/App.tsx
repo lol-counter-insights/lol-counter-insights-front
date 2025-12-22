@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo, useCallback, type MouseEvent } from 'reac
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
 import searchIcon from './assets/icons/magnifying-glass.svg'
+import bookmarkIcon from './assets/icons/bookmark.svg'
+import bookmarkFilledIcon from './assets/icons/bookmark-filled.svg'
 import { normalizeForSearch } from './utils/kana'
 import customChampionData from './data/champions.json'
 import { ChampionDetail } from './pages/ChampionDetail'
@@ -48,8 +50,19 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedLanes, setSelectedLanes] = useState<Lane[]>([])
   const [backgroundChampion, setBackgroundChampion] = useState<Champion | null>(null)
+  const [favoriteIds, setFavoriteIds] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem('favorites')
+      const parsed = saved ? JSON.parse(saved) : []
+      return Array.isArray(parsed) ? parsed : []
+    } catch {
+      return []
+    }
+  })
+  const [favoriteOnly, setFavoriteOnly] = useState(false)
 
-  const filteredChampions = useMemo(() => {
+  // 検索とレーンだけを反映した一覧（背景用）
+  const baseFilteredChampions = useMemo(() => {
     const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
 
     if (!searchQuery && selectedLanes.length === 0) return sorted
@@ -88,6 +101,12 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
     })
   }, [champions, searchQuery, selectedLanes])
 
+  // お気に入りフィルタまで反映した最終一覧（表示用）
+  const filteredChampions = useMemo(() => {
+    if (!favoriteOnly) return baseFilteredChampions
+    return baseFilteredChampions.filter((champion) => favoriteIds.includes(champion.id))
+  }, [baseFilteredChampions, favoriteOnly, favoriteIds])
+
   // 背景用に、現在のフィルター結果からランダムに1体選択
   const pickRandomBackground = useCallback(
     (prev: Champion | null) => {
@@ -106,13 +125,13 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
   )
 
   useEffect(() => {
-    // フィルター結果が変わったら即座に背景を選び直し
-    if (filteredChampions.length === 0) {
+    // 背景はお気に入りフィルタを無視し、検索＋レーンのみで選ぶ
+    if (baseFilteredChampions.length === 0) {
       setBackgroundChampion(null)
       return
     }
     setBackgroundChampion((prev) => pickRandomBackground(prev))
-  }, [filteredChampions, pickRandomBackground])
+  }, [baseFilteredChampions, pickRandomBackground])
 
   // 行見出しなしの単一グループで表示
   const groupedChampions = useMemo(() => {
@@ -128,20 +147,19 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
     navigate(`/champion/${championId}`)
   }
 
+  const toggleFavorite = (championId: string) => {
+    setFavoriteIds((prev) =>
+      prev.includes(championId) ? prev.filter((id) => id !== championId) : [...prev, championId],
+    )
+  }
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favoriteIds))
+  }, [favoriteIds])
+
   const handleLaneClick = (lane: Lane, event: MouseEvent<HTMLButtonElement>) => {
-    const allowMulti = event.ctrlKey || event.metaKey || event.shiftKey
-
-    setSelectedLanes((prev) => {
-      if (allowMulti) {
-        return prev.includes(lane) ? prev.filter((l) => l !== lane) : [...prev, lane]
-      }
-
-      // 単独選択。すでにそのレーンのみ選択中ならクリア（全て状態に戻す）
-      if (prev.length === 1 && prev[0] === lane) {
-        return []
-      }
-      return [lane]
-    })
+    event.preventDefault()
+    setSelectedLanes((prev) => (prev.length === 1 && prev[0] === lane ? [] : [lane]))
   }
 
   const clearLanes = () => setSelectedLanes([])
@@ -159,13 +177,13 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
       )}
       <div className="app-background-overlay" />
       <div className="app-content">
-        <div className="search-container">
-          <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
-            <h1 className="logo">
-              <img src="/logo.png" alt="League of Counter" className="logo-image" />
-            </h1>
-          </header>
+        <header className={`header ${searchQuery ? 'header-hidden-mobile' : ''}`}>
+          <h1 className="logo">
+            <img src="/logo.png" alt="League of Counter" className="logo-image" />
+          </h1>
+        </header>
 
+        <div className="search-container">
           <div className="search-wrapper">
             <span className="search-icon">
               <img src={searchIcon} alt="" aria-hidden="true" />
@@ -180,6 +198,16 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
           />
         </div>
         <div className="lane-filter">
+          <button
+            className={`lane-chip favorite-toggle ${favoriteOnly ? 'is-active' : ''}`}
+            onClick={() => setFavoriteOnly((prev) => !prev)}
+            type="button"
+            aria-label="お気に入りのみ"
+          >
+            <img src={favoriteOnly ? bookmarkFilledIcon : bookmarkIcon} alt="" aria-hidden="true" />
+            <span className="lane-chip-label">お気に入り</span>
+          </button>
+
           <button
             className={`lane-chip ${selectedLanes.length === 0 ? 'is-active' : ''}`}
             onClick={clearLanes}
@@ -208,16 +236,31 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
             {group.row && <div className="row-separator">{group.row}</div>}
             <div className="champion-grid">
               {group.champions.map((champion) => (
-            <div
-              key={champion.id}
-              className="champion-card"
-              onClick={() => handleChampionClick(champion.id)}
-            >
+                <div
+                  key={champion.id}
+                  className="champion-card"
+                  onClick={() => handleChampionClick(champion.id)}
+                >
+                  <button
+                    className={`favorite-button ${favoriteIds.includes(champion.id) ? 'is-active' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      toggleFavorite(champion.id)
+                    }}
+                    aria-label="お気に入りに追加"
+                    type="button"
+                  >
+                    <img
+                      src={favoriteIds.includes(champion.id) ? bookmarkFilledIcon : bookmarkIcon}
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </button>
                   <img
                     src={getChampionImageUrl(champion.image.full)}
-                alt={champion.name}
-                className="champion-image"
-              />
+                    alt={champion.name}
+                    className="champion-image"
+                  />
               <span className="champion-name">{champion.name}</span>
               {customData[champion.id]?.lanes && (
                 <div className="champion-lanes">

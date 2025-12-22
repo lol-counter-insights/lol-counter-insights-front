@@ -37,7 +37,7 @@ body {
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  padding: 96px 0 48px;
 }
 
 @keyframes app-bg-fade {
@@ -51,11 +51,10 @@ body {
 
 .header {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
+  top: 12px;
+  left: 12px;
   margin: 0;
-  z-index: 2;
-  opacity: 0.7;
+  z-index: 4;
 }
 
 .logo {
@@ -63,7 +62,7 @@ body {
 }
 
 .logo-image {
-  max-width: 90px;
+  max-width: 140px;
   width: 100%;
   height: auto;
   display: block;
@@ -76,7 +75,7 @@ body {
   margin-bottom: 32px;
   gap: 8px;
   position: sticky;
-  top: 12px;
+  top: 16px;
   z-index: 3;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
@@ -131,6 +130,13 @@ body {
   border-color: #4aa8ff;
   box-shadow: 0 0 0 2px rgba(74, 168, 255, 0.35);
   border-radius: 8px;
+}
+
+.favorite-toggle img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: invert(1) brightness(1.6);
 }
 
 @media (max-width: 479px) {
@@ -255,7 +261,76 @@ body {
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s;
   width: 100%;
+  position: relative;
 }
+
+.favorite-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid transparent;
+  backdrop-filter: blur(8px);
+  box-shadow: none;
+  opacity: 0;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+  padding: 0;
+}
+
+.favorite-button img {
+  width: 14px;
+  height: 14px;
+  filter: invert(1) brightness(2);
+  opacity: 0;
+  text-shadow:
+    -3px -3px 6px rgba(0, 0, 0, 0.95),
+    3px -3px 6px rgba(0, 0, 0, 0.95),
+    -3px 3px 6px rgba(0, 0, 0, 0.95),
+    3px 3px 6px rgba(0, 0, 0, 0.95);
+}
+
+.favorite-button:hover {
+  transform: scale(1.05);
+}
+
+.favorite-button.is-active {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.55);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 10px 18px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.favorite-button.is-active img {
+  filter: invert(1) brightness(2.2);
+  opacity: 1;
+}
+
+.champion-card:hover .favorite-button {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.champion-card:hover .favorite-button img {
+  opacity: 1;
+}
+
 
 .champion-card:hover {
   transform: scale(1.05);

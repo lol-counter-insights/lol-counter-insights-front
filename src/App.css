@@ -57,14 +57,35 @@
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  color: #666;
-  font-size: 1.1rem;
+  width: 18px;
+  height: 18px;
   pointer-events: none;
+}
+
+.search-cancel {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-cancel img {
+  width: 100%;
+  height: 100%;
 }
 
 .search-input {
   width: 100%;
-  padding: 12px 20px 12px 38px;
+  padding: 12px 40px 12px 38px;
   font-size: 1.1rem;
   border: none;
   border-radius: 8px;

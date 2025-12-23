@@ -1,0 +1,230 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 8px;
+  padding-bottom: 40px;
+  min-height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.logo {
+  margin: 0 0 4px 0;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.logoImage {
+  width: 105px;
+  height: auto;
+}
+
+/* 検索結果オーバーレイ */
+.searchResultsOverlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-teal);
+  border-radius: 0 0 10px 10px;
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+
+@media (max-width: 479px) {
+  .searchResultsOverlay {
+    position: absolute;
+    left: -8px;
+    right: -8px;
+    margin-top: 4px;
+    max-height: calc(100vh - 60px);
+  }
+}
+
+@media (min-width: 480px) {
+  .searchResultsOverlay {
+    grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  }
+}
+
+/* モバイル: 検索フォーカス時 */
+@media (max-width: 479px) {
+  .header {
+    min-height: 50px;
+  }
+
+  .searchFocused .logo {
+    display: none;
+  }
+
+  .searchFocused {
+    gap: 0;
+  }
+}
+
+/* スプラッシュアート */
+.splashContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.splashImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.splashOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, var(--color-bg-dark) 0%, transparent 100%);
+}
+
+/* チャンピオン情報 */
+.championInfo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.championTitle {
+  color: var(--color-gold);
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+  font-family: var(--font-serif);
+}
+
+.vsPrefix {
+  margin-right: 4px;
+}
+
+.championTitle::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-gold) 50%, transparent 100%);
+}
+
+.championTags {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin: 0;
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+}
+
+/* カウンターセクション */
+.counterSections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.counterSection {
+  background-color: transparent;
+}
+
+.sectionTitle {
+  color: var(--color-gold);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  font-family: var(--font-serif);
+  text-align: center;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: 4px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-gold) 50%, transparent 100%);
+}
+
+/* マッチアップリスト */
+.matchupList {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 480px) {
+  .matchupList {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .matchupList > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+}
+
+/* 外部リンク */
+.externalLinks {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.externalLink {
+  width: 120px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.2s;
+  background-color: #0088FF;
+  color: #fff;
+}
+
+.externalLink:hover {
+  opacity: 0.8;
+}
+
+/* データなし・読み込み中 */
+.noData {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-muted);
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-muted);
+}
+
+.error {
+  color: var(--color-error);
+}

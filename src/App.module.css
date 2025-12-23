@@ -1,0 +1,11 @@
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+.error {
+  color: var(--color-error);
+}

@@ -1,11 +1,23 @@
 :root {
+  /* Colors */
+  --color-gold: #f0e6d2;
+  --color-muted: #a09b8c;
+  --color-bg-dark: #1F1F1F;
+  --color-bg-gradient-start: #072423;
+  --color-bg-gradient-end: #000B16;
+  --color-error: #e84057;
+  --color-teal: #0A2827;
+
+  /* Fonts */
+  --font-serif: 'Times New Roman', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+
   font-family: 'Segoe UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
-  color: #f0e6d2;
-  background-color: #1F1F1F;
+  color: var(--color-gold);
+  background-color: var(--color-bg-dark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,6 +33,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(to bottom, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
+  background-attachment: fixed;
 }
 
 #root {

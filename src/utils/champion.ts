@@ -1,6 +1,11 @@
 import type { Champion, CustomChampionData } from '../types/champion'
-import { normalizeForSearch } from './kana'
+import { normalizeForSearch, getKanaRow } from './kana'
 import customChampionData from '../data/champions.json'
+
+export interface ChampionGroup {
+  row: string
+  champions: Champion[]
+}
 
 const customData = customChampionData as Record<string, CustomChampionData>
 
@@ -64,3 +69,23 @@ export const getOpggUrl = (championId: string): string =>
 
 export const getUggUrl = (championId: string): string =>
   `https://u.gg/lol/champions/${championId.toLowerCase()}/build`
+
+/**
+ * チャンピオンを50音行ごとにグループ化
+ */
+export const groupChampionsByKana = (champions: Champion[]): ChampionGroup[] => {
+  const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  const groups: ChampionGroup[] = []
+  let currentRow = ''
+
+  for (const champion of sorted) {
+    const row = getKanaRow(champion.name[0])
+    if (row !== currentRow) {
+      currentRow = row
+      groups.push({ row, champions: [] })
+    }
+    groups[groups.length - 1].champions.push(champion)
+  }
+
+  return groups
+}

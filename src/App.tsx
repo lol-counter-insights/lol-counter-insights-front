@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import styles from './App.module.css'
-import { getKanaRow } from './utils/kana'
-import { getChampionImageUrl, filterChampionsByQuery } from './utils/champion'
+import { getChampionImageUrl, groupChampionsByKana } from './utils/champion'
+import { useChampionSearch } from './hooks/useChampionSearch'
 import { ChampionCard } from './components/ChampionCard'
 import { SearchInput } from './components/SearchInput'
 import { ChampionDetail } from './pages/ChampionDetail'
@@ -12,36 +12,23 @@ const DDRAGON_VERSIONS_URL = 'https://ddragon.leagueoflegends.com/api/versions.j
 
 function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], ddragonVersion: string | null }) {
   const navigate = useNavigate()
-  const [searchQuery, setSearchQuery] = useState('')
-  const [isFocused, setIsFocused] = useState(false)
+  const {
+    searchQuery,
+    setSearchQuery,
+    setIsFocused,
+    filteredChampions,
+    isSearching,
+  } = useChampionSearch(champions)
 
-  const filteredChampions = useMemo(
-    () => filterChampionsByQuery(champions, searchQuery),
-    [champions, searchQuery]
+  // 50音行ごとにグループ化（検索していない時のみ使用）
+  const groupedChampions = useMemo(
+    () => groupChampionsByKana(champions),
+    [champions]
   )
-
-  // 50音行ごとにグループ化
-  const groupedChampions = useMemo(() => {
-    const groups: { row: string; champions: Champion[] }[] = []
-    let currentRow = ''
-
-    for (const champion of filteredChampions) {
-      const row = getKanaRow(champion.name[0])
-      if (row !== currentRow) {
-        currentRow = row
-        groups.push({ row, champions: [] })
-      }
-      groups[groups.length - 1].champions.push(champion)
-    }
-
-    return groups
-  }, [filteredChampions])
 
   const handleChampionClick = (championId: string) => {
     navigate(`/champion/${championId}`)
   }
-
-  const isSearching = isFocused || searchQuery
 
   const appClass = [
     styles.app,

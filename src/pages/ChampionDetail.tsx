@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { counterDataSource } from '../services/counterDataSource'
 import type { ChampionCounterData, CounterMatchup } from '../types/counter'
@@ -8,8 +8,9 @@ import {
   getSplashUrl,
   getOpggUrl,
   getUggUrl,
-  filterChampionsByQuery,
 } from '../utils/champion'
+import { getChampionTagDisplay } from '../utils/tag'
+import { useChampionSearch } from '../hooks/useChampionSearch'
 import { ChampionCard } from '../components/ChampionCard'
 import { SearchInput } from '../components/SearchInput'
 import customChampionData from '../data/champions.json'
@@ -20,25 +21,6 @@ interface Props {
   ddragonVersion: string | null
 }
 
-// タグの日本語変換
-const tagToJapanese: Record<string, string> = {
-  Fighter: 'ファイター',
-  Tank: 'タンク',
-  Mage: 'メイジ',
-  Assassin: 'アサシン',
-  Marksman: 'マークスマン',
-  Support: 'サポート',
-}
-
-const damageTypeToDisplay: Record<string, string> = {
-  ad: 'AD',
-  ap: 'AP',
-  hybrid: 'AD・AP',
-}
-
-// メレー/レンジ判定のしきい値
-const MELEE_RANGE_THRESHOLD = 300
-
 const customData = customChampionData as Record<string, CustomChampionData>
 
 export function ChampionDetail({ champions, ddragonVersion }: Props) {
@@ -46,16 +28,16 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
   const navigate = useNavigate()
   const [counterData, setCounterData] = useState<ChampionCounterData | null>(null)
   const [loading, setLoading] = useState(true)
-  const [isSearchFocused, setIsSearchFocused] = useState(false)
-  const [searchQuery, setSearchQuery] = useState('')
+
+  const {
+    searchQuery,
+    setSearchQuery,
+    setIsFocused,
+    filteredChampions,
+    isSearching,
+  } = useChampionSearch(champions)
 
   const champion = champions.find((c) => c.id === championId)
-
-  // 検索結果をフィルタリング
-  const filteredChampions = useMemo(() => {
-    if (!searchQuery) return []
-    return filterChampionsByQuery(champions, searchQuery)
-  }, [champions, searchQuery])
 
   useEffect(() => {
     const fetchCounterData = async () => {
@@ -97,29 +79,12 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
     </div>
   )
 
-  // タグを日本語に変換（1つ目のみ）
-  const japaneseTag = champion.tags?.[0]
-    ? tagToJapanese[champion.tags[0]] || champion.tags[0]
-    : undefined
-
-  // attackrangeからメレー/レンジを判定
-  const championCustomData = customData[champion.id]
-  const attackRange = champion.stats?.attackrange
-  const japaneseRange = attackRange !== undefined
-    ? (attackRange < MELEE_RANGE_THRESHOLD ? 'メレー' : 'レンジ')
-    : undefined
-
-  // damageTypeを変換
-  const damageTypeDisplay = championCustomData?.damageType
-    ? damageTypeToDisplay[championCustomData.damageType]
-    : undefined
-
-  // タグ、range、damageTypeを組み合わせ
-  const tagDisplay = [japaneseTag, japaneseRange, damageTypeDisplay].filter(Boolean).join(' / ')
+  // タグ表示を取得
+  const tagDisplay = getChampionTagDisplay(champion, customData[champion.id])
 
   const headerClass = [
     styles.header,
-    (isSearchFocused || searchQuery) && styles.searchFocused,
+    isSearching && styles.searchFocused,
   ].filter(Boolean).join(' ')
 
   return (
@@ -134,8 +99,8 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
         <SearchInput
           value={searchQuery}
           onChange={setSearchQuery}
-          onFocus={() => setIsSearchFocused(true)}
-          onBlur={() => setIsSearchFocused(false)}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
           variant="compact"
         >
           {/* 検索結果オーバーレイ */}

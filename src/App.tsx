@@ -1,70 +1,24 @@
 import { useState, useEffect, useMemo } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
-import './App.css'
-import { normalizeForSearch, getKanaRow } from './utils/kana'
-import customChampionData from './data/champions.json'
+import styles from './App.module.css'
+import { getKanaRow } from './utils/kana'
+import { getChampionImageUrl, filterChampionsByQuery } from './utils/champion'
+import { ChampionCard } from './components/ChampionCard'
+import { SearchInput } from './components/SearchInput'
 import { ChampionDetail } from './pages/ChampionDetail'
-
-interface Champion {
-  id: string
-  name: string
-  image: {
-    full: string
-  }
-  tags?: string[]
-  stats?: {
-    attackrange: number
-  }
-}
-
-interface ChampionData {
-  data: Record<string, Champion>
-}
-
-interface CustomChampionData {
-  nicknames: string[]
-}
+import type { Champion, ChampionData } from './types/champion'
 
 const DDRAGON_VERSIONS_URL = 'https://ddragon.leagueoflegends.com/api/versions.json'
-
-const customData = customChampionData as Record<string, CustomChampionData>
 
 function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], ddragonVersion: string | null }) {
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
   const [isFocused, setIsFocused] = useState(false)
 
-  const filteredChampions = useMemo(() => {
-    const sorted = [...champions].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
-
-    if (!searchQuery) return sorted
-
-    const normalizedQuery = normalizeForSearch(searchQuery)
-
-    return sorted.filter((champion) => {
-      // チャンピオン名（日本語）で検索
-      if (normalizeForSearch(champion.name).includes(normalizedQuery)) {
-        return true
-      }
-
-      // チャンピオンID（英語）で検索
-      if (champion.id.toLowerCase().includes(normalizedQuery)) {
-        return true
-      }
-
-      // カスタムデータの愛称で検索
-      const custom = customData[champion.id]
-      if (custom?.nicknames) {
-        for (const nickname of custom.nicknames) {
-          if (normalizeForSearch(nickname).includes(normalizedQuery)) {
-            return true
-          }
-        }
-      }
-
-      return false
-    })
-  }, [champions, searchQuery])
+  const filteredChampions = useMemo(
+    () => filterChampionsByQuery(champions, searchQuery),
+    [champions, searchQuery]
+  )
 
   // 50音行ごとにグループ化
   const groupedChampions = useMemo(() => {
@@ -83,90 +37,66 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
     return groups
   }, [filteredChampions])
 
-  const getChampionImageUrl = (imageFull: string) => {
-    if (!ddragonVersion) return ''
-    return `https://ddragon.leagueoflegends.com/cdn/${ddragonVersion}/img/champion/${imageFull}`
-  }
-
   const handleChampionClick = (championId: string) => {
     navigate(`/champion/${championId}`)
   }
 
+  const isSearching = isFocused || searchQuery
+
+  const appClass = [
+    styles.app,
+    isSearching && styles.isSearching,
+    searchQuery && styles.hasQuery,
+  ].filter(Boolean).join(' ')
+
+  const headerClass = [
+    styles.header,
+    isSearching && styles.headerHiddenMobile,
+  ].filter(Boolean).join(' ')
+
   return (
-    <div className={`app ${isFocused || searchQuery ? 'is-searching' : ''} ${searchQuery ? 'has-query' : ''}`}>
-      <header className={`header ${isFocused || searchQuery ? 'header-hidden-mobile' : ''}`}>
-        <h1 className="logo">
-          <img src="/logo.png" alt="League of Counter" className="logo-image" />
+    <div className={appClass}>
+      <header className={headerClass}>
+        <h1 className={styles.logo}>
+          <img src="/logo.png" alt="League of Counter" className={styles.logoImage} />
         </h1>
       </header>
 
-      <div className="search-container">
-        <div className="search-wrapper">
-          <img src="/search.png" alt="検索" className="search-icon" />
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
-            autoFocus
-          />
-          {searchQuery && (
-            <button
-              className="search-cancel"
-              onClick={() => setSearchQuery('')}
-              type="button"
-            >
-              <img src="/cancel.png" alt="クリア" />
-            </button>
-          )}
-        </div>
+      <div className={styles.searchContainer}>
+        <SearchInput
+          value={searchQuery}
+          onChange={setSearchQuery}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+          autoFocus
+        />
       </div>
 
-      <div className={`champion-list ${isFocused || searchQuery ? 'is-searching' : ''}`}>
+      <div className={styles.championList}>
         {searchQuery ? (
-          <div className="champion-grid">
+          <div className={styles.championGrid}>
             {filteredChampions.map((champion) => (
-              <div
+              <ChampionCard
                 key={champion.id}
-                className="champion-card"
-                onMouseDown={(e) => {
-                  e.preventDefault()
-                  handleChampionClick(champion.id)
-                }}
-              >
-                <img
-                  src={getChampionImageUrl(champion.image.full)}
-                  alt={champion.name}
-                  className="champion-image"
-                />
-                <span className="champion-name">{champion.name}</span>
-              </div>
+                imageUrl={getChampionImageUrl(ddragonVersion, champion.image.full)}
+                name={champion.name}
+                onClick={() => handleChampionClick(champion.id)}
+                variant="circle"
+              />
             ))}
           </div>
         ) : (
           groupedChampions.map((group) => (
-            <div key={group.row} className="champion-group">
-              <div className="row-separator">{group.row}</div>
-              <div className="champion-grid">
+            <div key={group.row} className={styles.championGroup}>
+              <div className={styles.rowSeparator}>{group.row}</div>
+              <div className={styles.championGrid}>
                 {group.champions.map((champion) => (
-                  <div
+                  <ChampionCard
                     key={champion.id}
-                    className="champion-card"
-                    onMouseDown={(e) => {
-                      e.preventDefault()
-                      handleChampionClick(champion.id)
-                    }}
-                  >
-                    <img
-                      src={getChampionImageUrl(champion.image.full)}
-                      alt={champion.name}
-                      className="champion-image"
-                    />
-                    <span className="champion-name">{champion.name}</span>
-                  </div>
+                    imageUrl={getChampionImageUrl(ddragonVersion, champion.image.full)}
+                    name={champion.name}
+                    onClick={() => handleChampionClick(champion.id)}
+                  />
                 ))}
               </div>
             </div>
@@ -175,7 +105,7 @@ function ChampionSearch({ champions, ddragonVersion }: { champions: Champion[], 
       </div>
 
       {filteredChampions.length === 0 && (
-        <div className="no-results">
+        <div className={styles.noResults}>
           該当するチャンピオンが見つかりません
         </div>
       )}
@@ -221,11 +151,11 @@ function App() {
   }, [])
 
   if (loading) {
-    return <div className="loading">チャンピオンを読み込み中...</div>
+    return <div className={styles.loading}>チャンピオンを読み込み中...</div>
   }
 
   if (error) {
-    return <div className="error">エラー: {error}</div>
+    return <div className={styles.error}>エラー: {error}</div>
   }
 
   return (

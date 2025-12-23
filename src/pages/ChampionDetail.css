@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 8px;
   padding-bottom: 40px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #072423, #000B16);
+  background-attachment: fixed;
 }
 
 /* ヘッダー */
@@ -11,6 +14,9 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .detail-logo {
@@ -84,37 +90,72 @@
   top: 100%;
   left: 0;
   right: 0;
-  background-color: #2a2a2a;
-  border-radius: 8px;
+  background-color: #0A2827;
+  border-radius: 0 0 10px 10px;
   margin-top: 4px;
   max-height: 300px;
   overflow-y: auto;
+  overflow-x: hidden;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+
+@media (max-width: 479px) {
+  .search-results-overlay {
+    position: absolute;
+    left: -8px;
+    right: -8px;
+    margin-top: 4px;
+    max-height: calc(100vh - 60px);
+  }
+}
+
+@media (min-width: 480px) {
+  .search-results-overlay {
+    grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  }
 }
 
 .search-result-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 8px 12px;
+  gap: 4px;
+  padding: 4px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: opacity 0.2s;
 }
 
 .search-result-item:hover {
-  background-color: #3a3a3a;
+  opacity: 0.7;
 }
 
 .search-result-image {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
   border-radius: 50%;
+}
+
+@media (min-width: 480px) {
+  .search-result-image {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .search-result-name {
   color: #f0e6d2;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 /* モバイル: 検索フォーカス時 */
@@ -170,6 +211,10 @@
   margin: 0;
   font-weight: bold;
   font-family: 'Times New Roman', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+}
+
+.vs-prefix {
+  margin-right: 0.3em;
 }
 
 .champion-title::after {

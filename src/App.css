@@ -2,6 +2,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 8px 8px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #072423, #000B16);
+  background-attachment: fixed;
 }
 
 .header {
@@ -27,7 +30,6 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #1f1f1f;
   padding: 8px 0;
 }
 

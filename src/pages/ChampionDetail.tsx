@@ -135,7 +135,9 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
 
       {/* チャンピオン情報 */}
       <div className={styles.championInfo}>
-        <h1 className={styles.championTitle}>{champion.name}</h1>
+        <h1 className={styles.championTitle}>
+          <span className={styles.vsPrefix}>vs.</span>{champion.name}
+        </h1>
         {tagDisplay && <p className={styles.championTags}>{tagDisplay}</p>}
       </div>
 

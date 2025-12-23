@@ -116,6 +116,10 @@
   font-family: var(--font-serif);
 }
 
+.vsPrefix {
+  margin-right: 4px;
+}
+
 .championTitle::after {
   content: '';
   display: block;

@@ -251,12 +251,12 @@ export function ChampionDetail({ champions, ddragonVersion }: Props) {
       ) : counterData ? (
         <div className="counter-sections">
           <section className="counter-section">
-            <h2 className="section-title">有利チャンピオン</h2>
+            <h2 className="section-title">おすすめピック</h2>
             {renderMatchupList(counterData.strongAgainst.slice(0, 5))}
           </section>
 
           <section className="counter-section">
-            <h2 className="section-title">不利チャンピオン</h2>
+            <h2 className="section-title">NGピック</h2>
             {renderMatchupList(counterData.weakAgainst.slice(0, 5))}
           </section>
         </div>

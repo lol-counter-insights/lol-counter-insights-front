@@ -57,7 +57,6 @@ export function Home({ champions, ddragonVersion }: Props) {
           onChange={setSearchQuery}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          autoFocus
         />
       </div>
 

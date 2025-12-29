@@ -1,50 +1,6166 @@
 {
   "Aatrox": {
     "strongAgainst": [
-      { "championId": "Yasuo" },
-      { "championId": "Riven" },
-      { "championId": "Irelia" },
-      { "championId": "Camille" },
-      { "championId": "Fiora" }
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Nidalee"
+      }
     ],
     "weakAgainst": [
-      { "championId": "Vayne" },
-      { "championId": "Quinn" },
-      { "championId": "Kayle" },
-      { "championId": "Teemo" },
-      { "championId": "Malphite" }
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Sion"
+      }
     ]
   },
   "Ahri": {
     "strongAgainst": [
-      { "championId": "Veigar" },
-      { "championId": "Lux" },
-      { "championId": "Xerath" },
-      { "championId": "TwistedFate" },
-      { "championId": "Ziggs" }
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Akshan"
+      },
+      {
+        "championId": "Zoe"
+      },
+      {
+        "championId": "Mel"
+      }
     ],
     "weakAgainst": [
-      { "championId": "Kassadin" },
-      { "championId": "Fizz" },
-      { "championId": "Zed" },
-      { "championId": "Yasuo" },
-      { "championId": "Sylas" }
+      {
+        "championId": "Anivia"
+      },
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Yone"
+      }
+    ]
+  },
+  "Akali": {
+    "strongAgainst": [
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Zoe"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Leblanc"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Viktor"
+      }
+    ]
+  },
+  "Akshan": {
+    "strongAgainst": [
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Yasuo"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ahri"
+      },
+      {
+        "championId": "Viktor"
+      }
+    ]
+  },
+  "Alistar": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Lux"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Ambessa": {
+    "strongAgainst": [
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Tryndamere"
+      },
+      {
+        "championId": "Renekton"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Warwick"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Amumu": {
+    "strongAgainst": [
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Udyr"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "MonkeyKing"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Shyvana"
+      }
+    ]
+  },
+  "Anivia": {
+    "strongAgainst": [
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Ahri"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Fizz"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Lissandra"
+      },
+      {
+        "championId": "Ryze"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ]
+  },
+  "Annie": {
+    "strongAgainst": [
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Cassiopeia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ryze"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Yasuo"
+      }
+    ]
+  },
+  "Aphelios": {
+    "strongAgainst": [
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Samira"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Kaisa"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Zeri"
+      }
+    ]
+  },
+  "Ashe": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Draven"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "Lucian"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Yunara"
+      }
+    ]
+  },
+  "AurelionSol": {
+    "strongAgainst": [
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Velkoz"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Lissandra"
+      },
+      {
+        "championId": "Mel"
+      }
+    ]
+  },
+  "Aurora": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Zed"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Leblanc"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Azir": {
+    "strongAgainst": [
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Bard": {
+    "strongAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "TahmKench"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Poppy"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Renata"
+      },
+      {
+        "championId": "Soraka"
+      }
+    ]
+  },
+  "Belveth": {
+    "strongAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "Kindred"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aatrox"
+      },
+      {
+        "championId": "Graves"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "JarvanIV"
+      },
+      {
+        "championId": "Lillia"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Sejuani"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Viego"
+      }
+    ]
+  },
+  "Blitzcrank": {
+    "strongAgainst": [
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Braum"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Nami"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Soraka"
+      }
+    ]
+  },
+  "Brand": {
+    "strongAgainst": [
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Yuumi"
+      },
+      {
+        "championId": "Lux"
+      },
+      {
+        "championId": "Nami"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Seraphine"
+      },
+      {
+        "championId": "TahmKench"
+      },
+      {
+        "championId": "Taric"
+      }
+    ]
+  },
+  "Braum": {
+    "strongAgainst": [
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Velkoz"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Yuumi"
+      }
+    ]
+  },
+  "Briar": {
+    "strongAgainst": [
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Zac"
+      },
+      {
+        "championId": "MasterYi"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "JarvanIV"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Rengar"
+      },
+      {
+        "championId": "Sylas"
+      }
+    ]
+  },
+  "Caitlyn": {
+    "strongAgainst": [
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Jhin"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Camille": {
+    "strongAgainst": [
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Mordekaiser"
+      },
+      {
+        "championId": "Gwen"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Trundle"
+      }
+    ]
+  },
+  "Cassiopeia": {
+    "strongAgainst": [
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Naafiri"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Leblanc"
+      },
+      {
+        "championId": "Lissandra"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Zaahen"
+      }
+    ]
+  },
+  "Chogath": {
+    "strongAgainst": [
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Rumble"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Corki": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "Ezreal"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Darius": {
+    "strongAgainst": [
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "MonkeyKing"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Garen"
+      },
+      {
+        "championId": "Kled"
+      }
+    ]
+  },
+  "Diana": {
+    "strongAgainst": [
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Xerath"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Akshan"
+      },
+      {
+        "championId": "Anivia"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Leblanc"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Orianna"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Sejuani"
+      }
+    ]
+  },
+  "DrMundo": {
+    "strongAgainst": [
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Tryndamere"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Chogath"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "MonkeyKing"
+      }
+    ]
+  },
+  "Draven": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Samira"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Zeri"
+      },
+      {
+        "championId": "Ziggs"
+      }
+    ]
+  },
+  "Ekko": {
+    "strongAgainst": [
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Elise"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Anivia"
+      },
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "Azir"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Veigar"
+      },
+      {
+        "championId": "Zac"
+      }
+    ]
+  },
+  "Elise": {
+    "strongAgainst": [
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Zac"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Bard"
+      },
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "LeeSin"
+      },
+      {
+        "championId": "Lulu"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Morgana"
+      },
+      {
+        "championId": "Nami"
+      },
+      {
+        "championId": "Pyke"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Seraphine"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Soraka"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Thresh"
+      },
+      {
+        "championId": "Viego"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Yuumi"
+      }
+    ]
+  },
+  "Evelynn": {
+    "strongAgainst": [
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Nunu"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "XinZhao"
+      }
+    ]
+  },
+  "Ezreal": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Nilah"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Corki"
+      }
+    ]
+  },
+  "Fiddlesticks": {
+    "strongAgainst": [
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "JarvanIV"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Evelynn"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Graves"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Kayn"
+      },
+      {
+        "championId": "Lillia"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Skarner"
+      },
+      {
+        "championId": "Zac"
+      }
+    ]
+  },
+  "Fiora": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Rumble"
+      },
+      {
+        "championId": "Kayle"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aatrox"
+      },
+      {
+        "championId": "Chogath"
+      },
+      {
+        "championId": "Gragas"
+      },
+      {
+        "championId": "KSante"
+      },
+      {
+        "championId": "Mordekaiser"
+      },
+      {
+        "championId": "Yorick"
+      }
+    ]
+  },
+  "Fizz": {
+    "strongAgainst": [
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Anivia"
+      },
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Orianna"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Taliyah"
+      },
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Xerath"
+      }
+    ]
+  },
+  "Galio": {
+    "strongAgainst": [
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Morgana"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Gangplank": {
+    "strongAgainst": [
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Mordekaiser"
+      },
+      {
+        "championId": "Kayle"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Renekton"
+      }
+    ]
+  },
+  "Garen": {
+    "strongAgainst": [
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "Sett"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Illaoi"
+      }
+    ]
+  },
+  "Gnar": {
+    "strongAgainst": [
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Irelia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Tryndamere"
+      }
+    ]
+  },
+  "Gragas": {
+    "strongAgainst": [
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Fiora"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Trundle"
+      }
+    ]
+  },
+  "Graves": {
+    "strongAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Malphite"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Volibear"
+      }
+    ]
+  },
+  "Gwen": {
+    "strongAgainst": [
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Kennen"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Camille"
+      },
+      {
+        "championId": "Chogath"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Shyvana"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Vi"
+      },
+      {
+        "championId": "XinZhao"
+      },
+      {
+        "championId": "Yorick"
+      }
+    ]
+  },
+  "Hecarim": {
+    "strongAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Ekko"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Shyvana"
+      }
+    ]
+  },
+  "Heimerdinger": {
+    "strongAgainst": [
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Smolder"
+      },
+      {
+        "championId": "Lux"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Gragas"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Zaahen"
+      }
+    ]
+  },
+  "Hwei": {
+    "strongAgainst": [
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Irelia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Azir"
+      },
+      {
+        "championId": "Galio"
+      }
+    ]
+  },
+  "Illaoi": {
+    "strongAgainst": [
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Garen"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Teemo"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aatrox"
+      },
+      {
+        "championId": "Gragas"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Orianna"
+      },
+      {
+        "championId": "Ornn"
+      },
+      {
+        "championId": "Renekton"
+      },
+      {
+        "championId": "Riven"
+      }
+    ]
+  },
+  "Irelia": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Vex"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aatrox"
+      },
+      {
+        "championId": "Akshan"
+      },
+      {
+        "championId": "Ambessa"
+      },
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Gnar"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Ornn"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Rumble"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Vladimir"
+      },
+      {
+        "championId": "Yorick"
+      },
+      {
+        "championId": "Zed"
+      }
+    ]
+  },
+  "Ivern": {
+    "strongAgainst": [
+      {
+        "championId": "Zyra"
+      },
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Zed"
+      },
+      {
+        "championId": "XinZhao"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Kayn"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Skarner"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Warwick"
+      }
+    ]
+  },
+  "Janna": {
+    "strongAgainst": [
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Zyra"
+      },
+      {
+        "championId": "Nami"
+      },
+      {
+        "championId": "Bard"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Pyke"
+      },
+      {
+        "championId": "Rell"
+      },
+      {
+        "championId": "Soraka"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Yuumi"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ]
+  },
+  "JarvanIV": {
+    "strongAgainst": [
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Belveth"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      }
+    ]
+  },
+  "Jax": {
+    "strongAgainst": [
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Kled"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "MonkeyKing"
+      },
+      {
+        "championId": "Nocturne"
+      },
+      {
+        "championId": "Rengar"
+      },
+      {
+        "championId": "Sejuani"
+      },
+      {
+        "championId": "Trundle"
+      },
+      {
+        "championId": "XinZhao"
+      }
+    ]
+  },
+  "Jayce": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Yorick"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Anivia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Singed"
+      }
+    ]
+  },
+  "Jhin": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Vayne"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Caitlyn"
+      }
+    ]
+  },
+  "Jinx": {
+    "strongAgainst": [
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Tristana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Corki"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Samira"
+      }
+    ]
+  },
+  "Kaisa": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "MissFortune"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ziggs"
+      }
+    ]
+  },
+  "Kalista": {
+    "strongAgainst": [
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Xayah"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Karma": {
+    "strongAgainst": [
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Maokai"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Morgana"
+      }
+    ]
+  },
+  "Karthus": {
+    "strongAgainst": [
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "MasterYi"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "MonkeyKing"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Zed"
+      }
+    ]
+  },
+  "Kassadin": {
+    "strongAgainst": [
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Zed"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Talon"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ]
+  },
+  "Katarina": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Irelia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aurora"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Taliyah"
+      },
+      {
+        "championId": "Veigar"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Xerath"
+      }
+    ]
+  },
+  "Kayle": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Ryze"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Garen"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "KSante"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Yasuo"
+      }
+    ]
+  },
+  "Kayn": {
+    "strongAgainst": [
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "Fiddlesticks"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Naafiri"
+      }
+    ]
+  },
+  "Kennen": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Vladimir"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Akshan"
+      },
+      {
+        "championId": "Camille"
+      },
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "Gnar"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Renekton"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Yasuo"
+      }
+    ]
+  },
+  "Khazix": {
+    "strongAgainst": [
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Zac"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Kayn"
+      },
+      {
+        "championId": "Lillia"
+      }
+    ]
+  },
+  "Kindred": {
+    "strongAgainst": [
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Nidalee"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Kayn"
+      },
+      {
+        "championId": "Lillia"
+      },
+      {
+        "championId": "Nocturne"
+      },
+      {
+        "championId": "Zac"
+      }
+    ]
+  },
+  "Kled": {
+    "strongAgainst": [
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Singed"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ambessa"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Gragas"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Nasus"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Ornn"
+      },
+      {
+        "championId": "Rumble"
+      },
+      {
+        "championId": "Shen"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Tryndamere"
+      },
+      {
+        "championId": "Urgot"
+      }
+    ]
+  },
+  "KogMaw": {
+    "strongAgainst": [
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Xayah"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Nilah"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Corki"
+      },
+      {
+        "championId": "Draven"
+      },
+      {
+        "championId": "Ezreal"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "Kaisa"
+      },
+      {
+        "championId": "Kalista"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Samira"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Smolder"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Varus"
+      },
+      {
+        "championId": "Yunara"
+      }
+    ]
+  },
+  "KSante": {
+    "strongAgainst": [
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Fiora"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Nasus"
+      }
+    ]
+  },
+  "Leblanc": {
+    "strongAgainst": [
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "Cassiopeia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Aurora"
+      },
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Velkoz"
+      }
+    ]
+  },
+  "LeeSin": {
+    "strongAgainst": [
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Zac"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Leona": {
+    "strongAgainst": [
+      {
+        "championId": "Morgana"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Seraphine"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Nautilus"
+      },
+      {
+        "championId": "Sona"
+      }
+    ]
+  },
+  "Lillia": {
+    "strongAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Rengar"
+      },
+      {
+        "championId": "Khazix"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Rammus"
+      }
+    ]
+  },
+  "Lissandra": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "Anivia"
+      },
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Velkoz"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Yasuo"
+      }
+    ]
+  },
+  "Lucian": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "MissFortune"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Lulu": {
+    "strongAgainst": [
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Seraphine"
+      },
+      {
+        "championId": "Zyra"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Lux": {
+    "strongAgainst": [
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Soraka"
+      },
+      {
+        "championId": "Nami"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Alistar"
+      },
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Heimerdinger"
+      }
+    ]
+  },
+  "Malphite": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Mordekaiser"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Gnar"
+      },
+      {
+        "championId": "Graves"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Tryndamere"
+      },
+      {
+        "championId": "Zed"
+      }
+    ]
+  },
+  "Malzahar": {
+    "strongAgainst": [
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Xerath"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Leblanc"
+      },
+      {
+        "championId": "Vladimir"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ]
+  },
+  "Maokai": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Zyra"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Bard"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Morgana"
+      },
+      {
+        "championId": "Nami"
+      },
+      {
+        "championId": "Rell"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Yuumi"
+      }
+    ]
+  },
+  "MasterYi": {
+    "strongAgainst": [
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "MonkeyKing"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "JarvanIV"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Shyvana"
+      },
+      {
+        "championId": "Vi"
+      },
+      {
+        "championId": "Zed"
+      }
+    ]
+  },
+  "Mel": {
+    "strongAgainst": [
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Viktor"
+      },
+      {
+        "championId": "Diana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ahri"
+      },
+      {
+        "championId": "Caitlyn"
+      },
+      {
+        "championId": "Draven"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Smolder"
+      }
+    ]
+  },
+  "Milio": {
+    "strongAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Soraka"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Alistar"
+      },
+      {
+        "championId": "Morgana"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Renata"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Zyra"
+      }
+    ]
+  },
+  "MissFortune": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Tristana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Caitlyn"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "Kaisa"
+      },
+      {
+        "championId": "Kalista"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Lucian"
+      },
+      {
+        "championId": "Varus"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Xayah"
+      }
+    ]
+  },
+  "MonkeyKing": {
+    "strongAgainst": [
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Amumu"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Vi"
+      }
+    ]
+  },
+  "Mordekaiser": {
+    "strongAgainst": [
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Riven"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Camille"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Malphite"
+      }
+    ]
+  },
+  "Morgana": {
+    "strongAgainst": [
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Nami"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Galio"
+      },
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Taliyah"
+      }
+    ]
+  },
+  "Naafiri": {
+    "strongAgainst": [
+      {
+        "championId": "Kayn"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Diana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ahri"
+      },
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Akshan"
+      },
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "Aurora"
+      },
+      {
+        "championId": "Azir"
+      },
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Leblanc"
+      },
+      {
+        "championId": "Orianna"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Ryze"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Skarner"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ]
+  },
+  "Nami": {
+    "strongAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Taric"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Lux"
+      },
+      {
+        "championId": "Morgana"
+      }
+    ]
+  },
+  "Nasus": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Zaahen"
+      },
+      {
+        "championId": "KSante"
+      },
+      {
+        "championId": "Kled"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Nautilus": {
+    "strongAgainst": [
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Rell"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Neeko": {
+    "strongAgainst": [
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Shaco"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Taric"
+      }
+    ]
+  },
+  "Nidalee": {
+    "strongAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Zac"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Ivern"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aatrox"
+      },
+      {
+        "championId": "Graves"
+      },
+      {
+        "championId": "Kayn"
+      },
+      {
+        "championId": "Kindred"
+      }
+    ]
+  },
+  "Nilah": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Xayah"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Smolder"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "Draven"
+      },
+      {
+        "championId": "Ezreal"
+      },
+      {
+        "championId": "Jhin"
+      },
+      {
+        "championId": "Kaisa"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Lucian"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Samira"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Ziggs"
+      }
+    ]
+  },
+  "Nocturne": {
+    "strongAgainst": [
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Talon"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Nunu": {
+    "strongAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "XinZhao"
+      },
+      {
+        "championId": "Aatrox"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Graves"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Nocturne"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Skarner"
+      },
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Warwick"
+      }
+    ]
+  },
+  "Olaf": {
+    "strongAgainst": [
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Akali"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Mordekaiser"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Renekton"
+      },
+      {
+        "championId": "Rumble"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Urgot"
+      },
+      {
+        "championId": "Yone"
+      }
+    ]
+  },
+  "Orianna": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Diana"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Ornn": {
+    "strongAgainst": [
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Tryndamere"
+      },
+      {
+        "championId": "Warwick"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Rumble"
+      },
+      {
+        "championId": "Trundle"
+      }
+    ]
+  },
+  "Pantheon": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Veigar"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Taric"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "KSante"
+      },
+      {
+        "championId": "Lux"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Neeko"
+      }
+    ]
+  },
+  "Poppy": {
+    "strongAgainst": [
+      {
+        "championId": "Ryze"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Milio"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Bard"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "KSante"
+      },
+      {
+        "championId": "Nami"
+      },
+      {
+        "championId": "Pyke"
+      },
+      {
+        "championId": "Rakan"
+      },
+      {
+        "championId": "Rell"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "TahmKench"
+      },
+      {
+        "championId": "Zac"
+      }
+    ]
+  },
+  "Pyke": {
+    "strongAgainst": [
+      {
+        "championId": "TahmKench"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Thresh"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Zilean"
+      }
+    ]
+  },
+  "Qiyana": {
+    "strongAgainst": [
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Fiddlesticks"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Ryze"
+      },
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Zed"
+      }
+    ]
+  },
+  "Quinn": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Irelia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "Garen"
+      },
+      {
+        "championId": "Gnar"
+      }
+    ]
+  },
+  "Rakan": {
+    "strongAgainst": [
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Soraka"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "TahmKench"
+      }
+    ]
+  },
+  "Rammus": {
+    "strongAgainst": [
+      {
+        "championId": "Lillia"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Trundle"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Zac"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "MonkeyKing"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Rengar"
+      },
+      {
+        "championId": "Talon"
+      }
+    ]
+  },
+  "RekSai": {
+    "strongAgainst": [
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Ekko"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "JarvanIV"
+      },
+      {
+        "championId": "LeeSin"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Rengar"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Viego"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Zac"
+      }
+    ]
+  },
+  "Rell": {
+    "strongAgainst": [
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Poppy"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Nautilus"
+      }
+    ]
+  },
+  "Renata": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Zilean"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Soraka"
+      },
+      {
+        "championId": "Bard"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Zyra"
+      }
+    ]
+  },
+  "Renekton": {
+    "strongAgainst": [
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Gangplank"
+      },
+      {
+        "championId": "Rumble"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ambessa"
+      },
+      {
+        "championId": "Riven"
+      }
+    ]
+  },
+  "Rengar": {
+    "strongAgainst": [
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Jax"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Lillia"
+      }
+    ]
+  },
+  "Riven": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Renekton"
+      },
+      {
+        "championId": "Poppy"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Mordekaiser"
+      },
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Shen"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Vladimir"
+      },
+      {
+        "championId": "Yone"
+      }
+    ]
+  },
+  "Rumble": {
+    "strongAgainst": [
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Ornn"
+      },
+      {
+        "championId": "Yorick"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Chogath"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Renekton"
+      },
+      {
+        "championId": "Teemo"
+      }
+    ]
+  },
+  "Ryze": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "Anivia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Shen"
+      }
+    ]
+  },
+  "Samira": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "Xayah"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "Draven"
+      },
+      {
+        "championId": "Vayne"
+      }
+    ]
+  },
+  "Sejuani": {
+    "strongAgainst": [
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Vi"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Zaahen"
+      },
+      {
+        "championId": "Belveth"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Zyra"
+      }
+    ]
+  },
+  "Senna": {
+    "strongAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Tristana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Maokai"
+      }
+    ]
+  },
+  "Seraphine": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Lulu"
+      }
+    ]
+  },
+  "Sett": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Gragas"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Riven"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Chogath"
+      },
+      {
+        "championId": "Garen"
+      },
+      {
+        "championId": "Yorick"
+      }
+    ]
+  },
+  "Shaco": {
+    "strongAgainst": [
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Sona"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "Kindred"
+      },
+      {
+        "championId": "Lux"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Neeko"
+      },
+      {
+        "championId": "TahmKench"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Xerath"
+      }
+    ]
+  },
+  "Shen": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Ryze"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Shyvana": {
+    "strongAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Gwen"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Singed": {
+    "strongAgainst": [
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Urgot"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Jayce"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "KSante"
+      },
+      {
+        "championId": "Mordekaiser"
+      },
+      {
+        "championId": "Shen"
+      },
+      {
+        "championId": "Zaahen"
+      }
+    ]
+  },
+  "Sion": {
+    "strongAgainst": [
+      {
+        "championId": "Zaahen"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Aatrox"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "Nasus"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Urgot"
+      }
+    ]
+  },
+  "Sivir": {
+    "strongAgainst": [
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Vayne"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ezreal"
+      },
+      {
+        "championId": "Kalista"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Tristana"
+      }
+    ]
+  },
+  "Skarner": {
+    "strongAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Nunu"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Smolder": {
+    "strongAgainst": [
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Tristana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Varus"
+      },
+      {
+        "championId": "Xayah"
+      }
+    ]
+  },
+  "Sona": {
+    "strongAgainst": [
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Milio"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Bard"
+      },
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Karma"
+      },
+      {
+        "championId": "Lulu"
+      },
+      {
+        "championId": "Rakan"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Soraka"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ]
+  },
+  "Soraka": {
+    "strongAgainst": [
+      {
+        "championId": "Bard"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Janna"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Lux"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Rakan"
+      },
+      {
+        "championId": "Renata"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ]
+  },
+  "Swain": {
+    "strongAgainst": [
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Soraka"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Alistar"
+      },
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Blitzcrank"
+      },
+      {
+        "championId": "Caitlyn"
+      },
+      {
+        "championId": "Corki"
+      },
+      {
+        "championId": "Draven"
+      },
+      {
+        "championId": "Ezreal"
+      },
+      {
+        "championId": "Galio"
+      },
+      {
+        "championId": "Gragas"
+      },
+      {
+        "championId": "Jhin"
+      },
+      {
+        "championId": "Kaisa"
+      },
+      {
+        "championId": "Lissandra"
+      },
+      {
+        "championId": "Lucian"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Nasus"
+      },
+      {
+        "championId": "Nautilus"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Quinn"
+      },
+      {
+        "championId": "Rell"
+      },
+      {
+        "championId": "Samira"
+      },
+      {
+        "championId": "Shen"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Thresh"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Varus"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Xayah"
+      },
+      {
+        "championId": "Yunara"
+      },
+      {
+        "championId": "Zaahen"
+      },
+      {
+        "championId": "Zeri"
+      }
+    ]
+  },
+  "Sylas": {
+    "strongAgainst": [
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Naafiri"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Gnar"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "JarvanIV"
+      },
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Neeko"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ]
+  },
+  "Syndra": {
+    "strongAgainst": [
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Ekko"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Vex"
+      }
+    ]
+  },
+  "TahmKench": {
+    "strongAgainst": [
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Rakan"
+      },
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Poppy"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Bard"
+      },
+      {
+        "championId": "Pyke"
+      }
+    ]
+  },
+  "Taliyah": {
+    "strongAgainst": [
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Morgana"
+      },
+      {
+        "championId": "Zed"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Talon": {
+    "strongAgainst": [
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Leblanc"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Azir"
+      },
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Galio"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "Nocturne"
+      },
+      {
+        "championId": "Viktor"
+      }
+    ]
+  },
+  "Taric": {
+    "strongAgainst": [
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Brand"
+      },
+      {
+        "championId": "Neeko"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Lulu"
+      },
+      {
+        "championId": "Lux"
+      },
+      {
+        "championId": "Nami"
+      },
+      {
+        "championId": "Nautilus"
+      },
+      {
+        "championId": "Pantheon"
+      },
+      {
+        "championId": "Rakan"
+      },
+      {
+        "championId": "Seraphine"
+      },
+      {
+        "championId": "TahmKench"
+      },
+      {
+        "championId": "Thresh"
+      }
+    ]
+  },
+  "Teemo": {
+    "strongAgainst": [
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Rumble"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Camille"
+      },
+      {
+        "championId": "Darius"
+      },
+      {
+        "championId": "Garen"
+      },
+      {
+        "championId": "Illaoi"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Trundle"
+      },
+      {
+        "championId": "Tryndamere"
+      },
+      {
+        "championId": "Zaahen"
+      }
+    ]
+  },
+  "Thresh": {
+    "strongAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Zyra"
+      },
+      {
+        "championId": "Zilean"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Pyke"
+      },
+      {
+        "championId": "Yuumi"
+      }
+    ]
+  },
+  "Tristana": {
+    "strongAgainst": [
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Aphelios"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ashe"
+      },
+      {
+        "championId": "Jhin"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Smolder"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Yunara"
+      },
+      {
+        "championId": "Zeri"
+      },
+      {
+        "championId": "Ziggs"
+      }
+    ]
+  },
+  "Trundle": {
+    "strongAgainst": [
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Camille"
+      },
+      {
+        "championId": "Ornn"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Gragas"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Volibear"
+      }
+    ]
+  },
+  "Tryndamere": {
+    "strongAgainst": [
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Gnar"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Teemo"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ambessa"
+      },
+      {
+        "championId": "DrMundo"
+      },
+      {
+        "championId": "Ornn"
+      }
+    ]
+  },
+  "TwistedFate": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Ahri"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Zoe"
+      }
+    ]
+  },
+  "Twitch": {
+    "strongAgainst": [
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Yasuo"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Jhin"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Smolder"
+      }
+    ]
+  },
+  "Udyr": {
+    "strongAgainst": [
+      {
+        "championId": "Zac"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Belveth"
+      },
+      {
+        "championId": "Sylas"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Amumu"
+      },
+      {
+        "championId": "Hecarim"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "Nocturne"
+      },
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Shyvana"
+      },
+      {
+        "championId": "Viego"
+      },
+      {
+        "championId": "XinZhao"
+      }
     ]
   },
   "Urgot": {
     "strongAgainst": [
-      { "championId": "Yasuo" },
-      { "championId": "Irelia" },
-      { "championId": "Riven" },
-      { "championId": "Camille" },
-      { "championId": "Aatrox" }
+      {
+        "championId": "Yorick"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "Yasuo"
+      }
     ],
     "weakAgainst": [
-      { "championId": "Vayne" },
-      { "championId": "Teemo" },
-      { "championId": "Lillia" },
-      { "championId": "Cassiopeia" },
-      { "championId": "Quinn" }
+      {
+        "championId": "Singed"
+      }
+    ]
+  },
+  "Varus": {
+    "strongAgainst": [
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Ziggs"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Smolder"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Vayne": {
+    "strongAgainst": [
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Samira"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Tristana"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ezreal"
+      },
+      {
+        "championId": "Jhin"
+      },
+      {
+        "championId": "Kalista"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Sivir"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Xayah"
+      },
+      {
+        "championId": "Yunara"
+      },
+      {
+        "championId": "Zeri"
+      },
+      {
+        "championId": "Ziggs"
+      }
+    ]
+  },
+  "Veigar": {
+    "strongAgainst": [
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Zed"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Yasuo"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Pantheon"
+      }
+    ]
+  },
+  "Velkoz": {
+    "strongAgainst": [
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Leblanc"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Kassadin"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Alistar"
+      },
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "AurelionSol"
+      },
+      {
+        "championId": "Aurora"
+      },
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Cassiopeia"
+      },
+      {
+        "championId": "Galio"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Lissandra"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Neeko"
+      },
+      {
+        "championId": "Orianna"
+      },
+      {
+        "championId": "Renata"
+      },
+      {
+        "championId": "Ryze"
+      },
+      {
+        "championId": "Senna"
+      },
+      {
+        "championId": "Seraphine"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Taliyah"
+      },
+      {
+        "championId": "Taric"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Viktor"
+      },
+      {
+        "championId": "Vladimir"
+      }
+    ]
+  },
+  "Vex": {
+    "strongAgainst": [
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "Syndra"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Swain"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Anivia"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Leblanc"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Yone"
+      }
+    ]
+  },
+  "Vi": {
+    "strongAgainst": [
+      {
+        "championId": "MonkeyKing"
+      },
+      {
+        "championId": "Zaahen"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "MasterYi"
+      },
+      {
+        "championId": "Zac"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Sejuani"
+      }
+    ]
+  },
+  "Viego": {
+    "strongAgainst": [
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Belveth"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Viktor": {
+    "strongAgainst": [
+      {
+        "championId": "Talon"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Xerath"
+      },
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Akshan"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Mel"
+      }
+    ]
+  },
+  "Vladimir": {
+    "strongAgainst": [
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Yorick"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Kennen"
+      }
+    ]
+  },
+  "Volibear": {
+    "strongAgainst": [
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Graves"
+      },
+      {
+        "championId": "Trundle"
+      },
+      {
+        "championId": "Elise"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "LeeSin"
+      },
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "XinZhao"
+      }
+    ]
+  },
+  "Warwick": {
+    "strongAgainst": [
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Nunu"
+      },
+      {
+        "championId": "Shaco"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ambessa"
+      },
+      {
+        "championId": "Camille"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Kled"
+      },
+      {
+        "championId": "LeeSin"
+      },
+      {
+        "championId": "Ornn"
+      },
+      {
+        "championId": "Rengar"
+      },
+      {
+        "championId": "Skarner"
+      },
+      {
+        "championId": "Tryndamere"
+      },
+      {
+        "championId": "Viego"
+      },
+      {
+        "championId": "Yone"
+      },
+      {
+        "championId": "Yorick"
+      },
+      {
+        "championId": "Zyra"
+      }
+    ]
+  },
+  "Xayah": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Smolder"
+      },
+      {
+        "championId": "Yasuo"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "MissFortune"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Kalista"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Samira"
+      }
+    ]
+  },
+  "Xerath": {
+    "strongAgainst": [
+      {
+        "championId": "Katarina"
+      },
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Fizz"
+      },
+      {
+        "championId": "Shaco"
+      },
+      {
+        "championId": "Sylas"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Hwei"
+      },
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "Mel"
+      },
+      {
+        "championId": "Veigar"
+      },
+      {
+        "championId": "Velkoz"
+      },
+      {
+        "championId": "Viktor"
+      }
+    ]
+  },
+  "XinZhao": {
+    "strongAgainst": [
+      {
+        "championId": "Volibear"
+      },
+      {
+        "championId": "Jax"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Evelynn"
+      },
+      {
+        "championId": "Gwen"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Nunu"
+      }
+    ]
+  },
+  "Yasuo": {
+    "strongAgainst": [
+      {
+        "championId": "Kennen"
+      },
+      {
+        "championId": "Kayle"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Annie"
+      },
+      {
+        "championId": "Lissandra"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ahri"
+      },
+      {
+        "championId": "Akshan"
+      },
+      {
+        "championId": "Diana"
+      },
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Smolder"
+      },
+      {
+        "championId": "Twitch"
+      },
+      {
+        "championId": "Urgot"
+      },
+      {
+        "championId": "Veigar"
+      },
+      {
+        "championId": "Xayah"
+      }
+    ]
+  },
+  "Yone": {
+    "strongAgainst": [
+      {
+        "championId": "Riven"
+      },
+      {
+        "championId": "Warwick"
+      },
+      {
+        "championId": "Olaf"
+      },
+      {
+        "championId": "Vex"
+      },
+      {
+        "championId": "Ahri"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Yorick": {
+    "strongAgainst": [
+      {
+        "championId": "Gwen"
+      },
+      {
+        "championId": "Fiora"
+      },
+      {
+        "championId": "Sett"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Warwick"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Jayce"
+      },
+      {
+        "championId": "Rumble"
+      },
+      {
+        "championId": "Urgot"
+      },
+      {
+        "championId": "Vladimir"
+      }
+    ]
+  },
+  "Yunara": {
+    "strongAgainst": [
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Ashe"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Yuumi": {
+    "strongAgainst": [
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Thresh"
+      },
+      {
+        "championId": "Janna"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Brand"
+      }
+    ]
+  },
+  "Zaahen": {
+    "strongAgainst": [
+      {
+        "championId": "Teemo"
+      },
+      {
+        "championId": "Singed"
+      },
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Heimerdinger"
+      },
+      {
+        "championId": "Cassiopeia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Nasus"
+      },
+      {
+        "championId": "Sejuani"
+      },
+      {
+        "championId": "Sion"
+      },
+      {
+        "championId": "Vi"
+      }
+    ]
+  },
+  "Zac": {
+    "strongAgainst": [
+      {
+        "championId": "RekSai"
+      },
+      {
+        "championId": "Fiddlesticks"
+      },
+      {
+        "championId": "Poppy"
+      },
+      {
+        "championId": "Ekko"
+      },
+      {
+        "championId": "Kindred"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Briar"
+      },
+      {
+        "championId": "Elise"
+      },
+      {
+        "championId": "Khazix"
+      },
+      {
+        "championId": "LeeSin"
+      },
+      {
+        "championId": "Nidalee"
+      },
+      {
+        "championId": "Rammus"
+      },
+      {
+        "championId": "Udyr"
+      },
+      {
+        "championId": "Vi"
+      },
+      {
+        "championId": "Zyra"
+      }
+    ]
+  },
+  "Zed": {
+    "strongAgainst": [
+      {
+        "championId": "Malphite"
+      },
+      {
+        "championId": "Qiyana"
+      },
+      {
+        "championId": "Irelia"
+      },
+      {
+        "championId": "Karthus"
+      },
+      {
+        "championId": "MasterYi"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aurora"
+      },
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Taliyah"
+      },
+      {
+        "championId": "Veigar"
+      }
+    ]
+  },
+  "Zeri": {
+    "strongAgainst": [
+      {
+        "championId": "Swain"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "Draven"
+      },
+      {
+        "championId": "Vayne"
+      }
+    ],
+    "weakAgainst": []
+  },
+  "Ziggs": {
+    "strongAgainst": [
+      {
+        "championId": "Vayne"
+      },
+      {
+        "championId": "Kaisa"
+      },
+      {
+        "championId": "Tristana"
+      },
+      {
+        "championId": "Nilah"
+      },
+      {
+        "championId": "Draven"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Aphelios"
+      },
+      {
+        "championId": "Caitlyn"
+      },
+      {
+        "championId": "Corki"
+      },
+      {
+        "championId": "Jinx"
+      },
+      {
+        "championId": "KogMaw"
+      },
+      {
+        "championId": "Lucian"
+      },
+      {
+        "championId": "MissFortune"
+      },
+      {
+        "championId": "Varus"
+      }
+    ]
+  },
+  "Zilean": {
+    "strongAgainst": [
+      {
+        "championId": "Pyke"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Sona"
+      },
+      {
+        "championId": "Sylas"
+      },
+      {
+        "championId": "Soraka"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Alistar"
+      },
+      {
+        "championId": "Braum"
+      },
+      {
+        "championId": "Leona"
+      },
+      {
+        "championId": "Nautilus"
+      },
+      {
+        "championId": "Neeko"
+      },
+      {
+        "championId": "Rakan"
+      },
+      {
+        "championId": "Rell"
+      },
+      {
+        "championId": "Renata"
+      },
+      {
+        "championId": "Seraphine"
+      },
+      {
+        "championId": "Thresh"
+      }
+    ]
+  },
+  "Zoe": {
+    "strongAgainst": [
+      {
+        "championId": "Naafiri"
+      },
+      {
+        "championId": "Malzahar"
+      },
+      {
+        "championId": "TwistedFate"
+      },
+      {
+        "championId": "Kassadin"
+      },
+      {
+        "championId": "Anivia"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ahri"
+      },
+      {
+        "championId": "Akali"
+      },
+      {
+        "championId": "Azir"
+      },
+      {
+        "championId": "Fizz"
+      }
+    ]
+  },
+  "Zyra": {
+    "strongAgainst": [
+      {
+        "championId": "Renata"
+      },
+      {
+        "championId": "Milio"
+      },
+      {
+        "championId": "Zac"
+      },
+      {
+        "championId": "Sejuani"
+      },
+      {
+        "championId": "Warwick"
+      }
+    ],
+    "weakAgainst": [
+      {
+        "championId": "Ivern"
+      },
+      {
+        "championId": "Janna"
+      },
+      {
+        "championId": "Lulu"
+      },
+      {
+        "championId": "Maokai"
+      },
+      {
+        "championId": "Thresh"
+      }
     ]
   }
 }
